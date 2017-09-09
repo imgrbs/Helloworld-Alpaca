@@ -27,8 +27,23 @@ body {
 }
 
 .landing-height {
-  min-height: 70vh;
-  background-color: lime;
+  min-height: 90vh;
+  background-image: url('../img/bg1.png');
+  background-size: cover;
+  flex-direction: column;
+}
+
+.landing-height .hello-field {
+  max-height: 300px;
+}
+
+img.helloworld {
+  margin-top: 1.3em;
+  max-height: 230px;
+}
+
+img.breaklimit {
+  max-height: 180px;
 }
 
 .why-height {
