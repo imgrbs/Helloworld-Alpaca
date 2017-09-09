@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'quark';
+  src: url('../font/Quark-Light.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quark';
+  src: url('../font/Quark-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cat';
+  src: url('../font/IntrudingCat.otf');
+  font-style: normal;
+}
+
+body {
+  font-family: 'cat', 'quark';
+  font-size: 24px;
+}
+
+.landing-height {
+  min-height: 70vh;
+  background-color: lime;
+}
+
+.why-height {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  min-height: 70vh;
+}
+
+.team-height {
+  padding: 1em;
+  min-height: 70vh;
+  background-color: aqua;
+}
+
+.where-height {
+  padding: 1em;
+  min-height: 70vh;
+}
+
+.sponsor-height {
+  min-height: 70vh;
+  background-color: darkblue;
+}
+
+.game-height {
+  min-height: 70vh;
+  background-color: crimson;
+}
+
+.portfolio-height {
+  min-height: 70vh;
+  background-color: pink;
+}
+
+.header-text {
+  font-family: 'cat';
+  padding-top: 1.3em;
+  font-weight: bold;
+}
+
+.what-text {
+  color: #FFD101;
+  font-size: 4em;
+  height: auto;
+  font-family: 'cat';
+}
