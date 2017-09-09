@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
+import Nav from './components/Navbar'
+
 import Landing from './containers/Landing'
 import Why from './containers/Why'
 import Team from './containers/Team'
@@ -18,6 +20,11 @@ class Index extends React.Component {
           <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
           <link rel="stylesheet" href="/static/css/style.css" />
         </Head>
+        <div className="container-fluid">
+          <div className="row">
+            <Nav />
+          </div>
+        </div>
         <div className="container-fluid">
           <Landing />
           <Why />

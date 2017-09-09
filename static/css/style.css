@@ -22,6 +22,10 @@ body {
   font-size: 24px;
 }
 
+#nav {
+  background-color: #FFD101;
+}
+
 .landing-height {
   min-height: 70vh;
   background-color: lime;

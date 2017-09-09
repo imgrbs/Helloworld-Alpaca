@@ -10,6 +10,10 @@ class LandingPage extends React.Component {
         </h1>
         <div className="col-12 text-center">
           <h2>Alpaca</h2>
+          <h3>
+            Break Your Limit <br />
+            And Practice Your Skill <br />
+          </h3>
         </div>
       </div>
     )
