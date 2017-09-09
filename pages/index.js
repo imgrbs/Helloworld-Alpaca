@@ -7,6 +7,7 @@ import Landing from './containers/Landing'
 import Why from './containers/Why'
 import Team from './containers/Team'
 import Where from './containers/Where'
+import When from './containers/When'
 import Sponsor from './containers/Sponsor'
 import Game from './containers/Game'
 import Portfolio from './containers/Portfolio'
@@ -20,16 +21,17 @@ class Index extends React.Component {
           <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
           <link rel="stylesheet" href="/static/css/style.css" />
         </Head>
-        <div className="container-fluid">
+        {/* <div className="container-fluid">
           <div className="row">
             <Nav />
           </div>
-        </div>
+        </div> */}
         <div className="container-fluid">
           <Landing />
           <Why />
           <Team />
           <Where />
+          <When />
           <Sponsor />
           <Game />
           <Portfolio />

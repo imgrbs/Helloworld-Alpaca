@@ -14,7 +14,7 @@ class WhyPage extends React.Component {
               ตัวอักษรเพื่อทำหนังสือตัวอย่าง Lorem Ipsum อยู่ยงคงกระพันมาไม่ใช่แค่เพียงห้าศตวรรษ</p>
             </div>
             <div className="col-lg-6">
-              <img style={{ height: '100%', width: '100%'}} src="../../static/img/alpaca.jpg" alt="" />
+              <img style={{ height: '100%', width: '100%' }} src="../../static/img/al7.png" alt="" />
             </div>
           </div>
         </div>

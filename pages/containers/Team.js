@@ -5,7 +5,6 @@ const Box = styled.div`
   width: 100%;
   height: 300px;
   margin: 1em 0;
-  border: solid 5px #000;
 `
 
 class TeamPage extends React.Component {
@@ -19,16 +18,24 @@ class TeamPage extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
-                <Box />
+                <Box>
+                  <img src="../../static/img/font.png" alt="" />
+                </Box>
               </div>
               <div className="col-lg-6">
-                <Box />
+                <Box>
+                  <img src="../../static/img/de.png" alt="" />
+                </Box>
               </div>
               <div className="col-lg-6">
-                <Box />
+                <Box>
+                  <img src="../../static/img/game.png" alt="" />
+                </Box>
               </div>
               <div className="col-lg-6">
-                <Box />
+                <Box>
+                  <img src="../../static/img/infra.png" alt="" />
+                </Box>
               </div>
             </div>
           </div>

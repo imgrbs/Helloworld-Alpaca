@@ -31,6 +31,7 @@ body {
   background-image: url('../img/bg1.png');
   background-size: cover;
   flex-direction: column;
+  padding: 1.3em 0;
 }
 
 .landing-height .hello-field {
@@ -38,7 +39,6 @@ body {
 }
 
 img.helloworld {
-  margin-top: 1.3em;
   max-height: 230px;
 }
 
@@ -51,33 +51,58 @@ img.breaklimit {
   justify-content: center;
   align-items: center;
   padding: 1em;
-  min-height: 70vh;
+  min-height: 90vh;
+  background-image: url('../img/bg2.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .team-height {
   padding: 1em;
-  min-height: 70vh;
-  background-color: aqua;
+  min-height: 90vh;
+  background-image: url('../img/bg3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.team-height img{
+  max-height: 250px;
 }
 
 .where-height {
   padding: 1em;
-  min-height: 70vh;
+  min-height: 90vh;
+  background-image: url('../img/bg4.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.when-height {
+  min-height: 90vh;
+  background-image: url('../img/bg5.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .sponsor-height {
-  min-height: 70vh;
-  background-color: darkblue;
+  min-height: 90vh;
+  background-image: url('../img/bg6.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .game-height {
-  min-height: 70vh;
-  background-color: crimson;
+  min-height: 90vh;
+  background-image: url('../img/bg6.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .portfolio-height {
-  min-height: 70vh;
-  background-color: pink;
+  min-height: 90vh;
+  background-image: url('../img/bg6.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .header-text {
@@ -91,4 +116,10 @@ img.breaklimit {
   font-size: 4em;
   height: auto;
   font-family: 'cat';
+}
+
+.position-fix {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
