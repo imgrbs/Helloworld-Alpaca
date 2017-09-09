@@ -5,9 +5,9 @@ class LandingPage extends React.Component {
   render() {
     return (
       <div className="row landing-height">
-        <h1 className="header-text col-12 text-center">
-          HelloWorld
-        </h1>
+        <div className="col-12 text-center">
+          <img src="../../static/img/logo-01.png" alt="logo-alpaca" />
+        </div>
         <div className="col-12 text-center">
           <h2>Alpaca</h2>
           <h3>
