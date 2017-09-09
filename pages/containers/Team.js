@@ -12,7 +12,7 @@ class TeamPage extends React.Component {
     return (
       <div className="row team-height">
         <div className="col-12 text-center">
-          <h1>Team</h1>
+          <img src="../../static/img/team.png" alt="team" />
         </div>
         <div className="col-12 text-center">
           <div className="container">

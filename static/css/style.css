@@ -29,6 +29,7 @@ body {
 .landing-height {
   min-height: 90vh;
   background-image: url('../img/bg1.png');
+  background-attachment: fixed;
   background-size: cover;
   flex-direction: column;
   padding: 1.3em 0;
@@ -112,10 +113,7 @@ img.breaklimit {
 }
 
 .what-text {
-  color: #FFD101;
-  font-size: 4em;
-  height: auto;
-  font-family: 'cat';
+  max-height: 100px;
 }
 
 .position-fix {

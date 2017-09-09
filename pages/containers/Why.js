@@ -7,7 +7,7 @@ class WhyPage extends React.Component {
         <div className="col-12 text-center">
           <div className="row">
             <div className="col-lg-6">
-              <h1 className="what-text">What?</h1>
+              <img className="what-text" src="../../static/img/what-01.png" alt="what" />
               <p> Hello World Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ
               ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์ มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐาน
               ของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำรางตัวพิมพ์มาสลับสับตำแหน่ง
