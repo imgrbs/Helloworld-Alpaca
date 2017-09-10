@@ -18,7 +18,7 @@ class Modal extends React.Component {
   render() {
     return (
       <Div on={this.props.on}>
-        <div className="modal">
+        <div className="modal" onAbort={() => { this.props.handle() }}>
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-header">
@@ -32,7 +32,7 @@ class Modal extends React.Component {
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-primary">Save changes</button>
-                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={() => { this.props.handle() }}>Close</button>
               </div>
             </div>
           </div>
