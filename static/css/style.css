@@ -25,6 +25,9 @@ body {
 #nav {
   background-color: #FFD101;
 }
+#nav nav {
+  color: #fff;
+}
 
 .logo-sm {
   max-width: 80px;

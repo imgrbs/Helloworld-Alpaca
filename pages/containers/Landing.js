@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 const Register = styled.button`
   border: 5px solid #fff;
-  font-size: 2em;
+  font-size: 1.5em;
   border-radius: 30px;
   padding: 0em 1em;
   background: none;
   color: #fff;
-  min-width: 270px;
+  min-width: 6em;
   margin: 0 auto;
   cursor: pointer;
   transition: 0.2s;
