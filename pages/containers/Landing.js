@@ -29,7 +29,7 @@ class LandingPage extends React.Component {
         <div className="col-12 text-center">
           <img className="breaklimit" src="../../static/img/desc.png" alt="break-limit" />
         </div>
-        <Register style={{marginTop: '2em'}}>Register</Register>
+        <Register style={{marginTop: '2em'}}>Coming Soon</Register>
       </div>
     )
   }

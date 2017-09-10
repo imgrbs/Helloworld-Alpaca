@@ -59,15 +59,15 @@ class Index extends React.Component {
           <Portfolio />
           <Contact />
         </div>
-        <div className="container-fluid">
+        <footer className="container-fluid">
           <div className="row">
             <div className="container">
-              <div className="row">
+              <div className="row text-center">
                 footer
               </div>
             </div>
           </div>
-        </div>
+        </footer>
       </div>
     )
   }

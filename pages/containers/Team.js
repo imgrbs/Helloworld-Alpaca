@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Modal from '../components/Modal'
+
 const Box = styled.div`
   margin: 1em 0;
   display: flex;
@@ -9,9 +11,30 @@ const Box = styled.div`
   align-items: center;
   width: 100%;
   height: 185px;
+  
+  span {
+    font-size: 35px;
+    color: ${props => props.color ? props.color : '#fff' };
+  }
 `
 
 class TeamPage extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      oneOn : 'false',
+      twoOn : 'false',
+      threeOn : 'false',
+      fourOn : 'false'
+    }
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick() {
+    this.setState({ oneOn: 'true' })
+  }
+
   render() {
     return (
       <div id="team" className="row team-height">
@@ -22,27 +45,28 @@ class TeamPage extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-md-3">
-                <Box>
+                <Box onClick={() => { this.handleClick() }} color="#A56CFF">
                   <img className="team-logo-top" src="../../static/img/font.png" alt="" />
-                  Front-End
+                  <span>Front-End</span>
                 </Box>
+                <Modal handle={() => { this.setState({ oneOn : 'false'}) }} on={this.state.oneOn} />
               </div>
               <div className="col-md-3">
-                <Box>
+                <Box color="#D4FF36">
                   <img className="team-logo-top" src="../../static/img/de.png" alt="" />
-                  Design
+                  <span>Design</span>
                 </Box>
               </div>
               <div className="col-md-3">
-                <Box>
+                <Box color="#FF6666">
                   <img className="team-logo-top" src="../../static/img/game.png" alt="" />
-                  Game
+                  <span>Game</span>
                 </Box>
               </div>
               <div className="col-md-3">
-                <Box>
+                <Box color="#41E0A7">
                   <img className="team-logo-top" src="../../static/img/infra.png" alt="" />
-                  Infrastructure
+                  <span>Infrastructure</span>
                 </Box>
               </div>
             </div>
