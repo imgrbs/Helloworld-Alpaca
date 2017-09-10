@@ -26,12 +26,20 @@ body {
   background-color: #FFD101;
 }
 
+#nav nav {
+  position: relative;
+}
+
 #nav nav li {
   margin: 0 1em;
 }
 
 #nav nav li a{
   color: #fff;
+}
+
+#nav .navbar-brand {
+  position: absolute;
 }
 
 .logo-sm {

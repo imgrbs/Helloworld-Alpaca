@@ -20,11 +20,24 @@ class Index extends React.Component {
         <Head>
           <title>HelloWorld #Alpaca</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          <meta charset="UTF-8" />
+          <meta property="og:title" content="HelloWorld #Alpaca" />
+          <meta property="og:type" content="company" />
+          <meta property="og:url" content="https://helloworld.itbangmod.in.th/" />
+          {/* <meta property="og:image" content="" /> */}
+          <meta property="og:site_name" content="HelloWorld #Alpaca By Alchemist" />
+          <meta property="og:description" content="Break Your Limit and Practice Your Skill!" />
+          {/* <meta property="fb:page_id" content="1767691256809451"> */}
+          <link rel="icon" type="image/ico" href="../static/favicon.ico" sizes="16x16" />
+          <meta name="msapplication-TileColor" content="#FFD101" />
+          <meta name="theme-color" content="#FFD101" />
+
           <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
           <link rel="stylesheet" href="/static/css/style.css" />
-          {/* <script src="../static/js/jquery.min.js"></script>
-          <script src="../static/js/bootstrap.min.js"></script> */}
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+          <script src="../static/js/jquery.min.js"></script>
+          {/* <script src="../static/js/bootstrap.min.js"></script> */}
+          {/* <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> */}
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
         </Head>
