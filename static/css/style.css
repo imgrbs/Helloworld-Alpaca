@@ -33,11 +33,11 @@ nav {
 
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
+  background: transparent;
 }
 
 .nav-pills .nav-link {
   margin: 0 1em;
-  background: transparent;
 }
 
 #nav .navbar-brand {
