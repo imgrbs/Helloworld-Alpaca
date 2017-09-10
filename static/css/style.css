@@ -28,6 +28,7 @@ body {
 
 #nav nav {
   position: relative;
+  min-height: 55px;
 }
 
 #nav nav li {
@@ -40,6 +41,13 @@ body {
 
 #nav .navbar-brand {
   position: absolute;
+  top: 0;
+}
+
+#nav .navbar-toggler {
+  position: absolute;
+  top: 7px;
+  right: 0;
 }
 
 .logo-sm {
