@@ -245,7 +245,7 @@ img.breaklimit {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 55vh;
   background-color: #BF8E8E;
   background-size: cover;
   background-position: center;
@@ -337,7 +337,9 @@ footer {
 
 /* spinner */
 .preload {
-  /* position: absolute; */
+  -webkit-transition:  0.5s;
+  -moz-transition:  0.5s;
+  transition:  0.5s;
   z-index: 9999;
   display: flex;
   justify-content: center;

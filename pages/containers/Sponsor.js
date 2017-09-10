@@ -6,9 +6,9 @@ class SponsorPage extends React.Component {
       <div className="row sponsor-height">
         <div className="col-12 text-center">
           Sponsor by <br />
-          SIT KMUTT <br />
+          <img style={{width:'250px'}} src="../../static/img/logo-sit.png" alt="logo-sit" /> <br />
           created by <br />
-          <img src="../../static/img/logo-white1.png" alt="logo-alchemist" />
+          <img style={{height:'150px'}} src="../../static/img/logo-white1.png" alt="logo-alchemist" />
         </div>
       </div>
     )

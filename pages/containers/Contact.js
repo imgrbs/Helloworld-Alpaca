@@ -6,6 +6,7 @@ class ContactPage extends React.Component {
       <div id="contact" className="row contact-height">
         <div className="col-12 text-center">
           <h1>ContactPage</h1>
+          {/* <img style={{height:'300px'}} src="../../static/img/alpaca.gif" alt="alpaca-gif" /> */}
         </div>
       </div>
     )

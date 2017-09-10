@@ -4,8 +4,8 @@ import Head from 'next/head'
 import styled from 'styled-components'
 
 import Nav from './components/Navbar'
+import Preload from './components/Preload'
 
-import Preload from './containers/Preload'
 import Landing from './containers/Landing'
 import Why from './containers/Why'
 import Team from './containers/Team'
@@ -15,6 +15,7 @@ import Sponsor from './containers/Sponsor'
 import Game from './containers/Game'
 import Portfolio from './containers/Portfolio'
 import Contact from './containers/Contact'
+import Footer from './containers/Footer'
 
 const MainContainer = styled.div`
   display: ${props => props.display ? 'block' : 'none'}
@@ -73,17 +74,11 @@ class Index extends React.Component {
           <Where />
           <When />
           <Sponsor />
-          <Game />
-          <Portfolio />
+          {/* <Game />
+          <Portfolio /> */}
           <Contact />
-          <div className="row">
-            <div className="container">
-              <div className="row text-center">
-                footer
-              </div>
-            </div>
-          </div>
-        </MainContainer>>
+          <Footer />
+        </MainContainer>
       </div>
     )
   }
