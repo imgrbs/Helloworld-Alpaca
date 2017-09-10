@@ -40,7 +40,7 @@ img.flip {
 }
 
 .alpaca {
-  max-height: 500px;
+  max-height: 9em;
 }
 
 .landing-height {
@@ -58,11 +58,11 @@ img.flip {
 }
 
 img.helloworld {
-  max-height: 230px;
+  max-height: 5em;
 }
 
 img.breaklimit {
-  max-height: 180px;
+  max-height: 4em;
 }
 
 .why-height {
@@ -134,7 +134,7 @@ img.breaklimit {
 }
 
 .what-text {
-  max-height: 100px;
+  max-height: 2.5em;
 }
 
 .position-fix {
@@ -144,19 +144,21 @@ img.breaklimit {
 }
 
 .team-logo-top {
-  margin-top: 1em;
-  max-height: 170px;
+  height: 150px;
+  width: 150px;
+  margin: 0;
 }
 
 .team-logo-bottom {
-  margin-bottom: 1em;
-  max-height: 170px;
+  height: 150px;
+  width: 150px;
 }
 
 @media only screen and
 (min-width: 1024px){
   .team-logo-top {
     margin-top: 1em;
+    margin-bottom: 1em;
   }
   
   .team-logo-bottom {
