@@ -21,7 +21,6 @@ body {
   overflow-x: hidden;
   font-family: 'cat', 'quark';
   font-size: 24px;
-  margin: 0;
 }
 
 nav {
@@ -207,7 +206,7 @@ img.breaklimit {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em 0 0;
+  padding: 50px 0 0;
   min-height: 90vh;
   background-image: url('../img/bg2.png');
   background-size: cover;
@@ -265,7 +264,7 @@ img.breaklimit {
 }
 
 .contact-height {
-  padding: 2em 0;
+  padding: 80px 0 0;
   min-height: 90vh;
   background-image: url('../img/bg6.png');
   background-size: cover;
@@ -287,6 +286,7 @@ footer {
 .what-text {
   margin-bottom: 1.2em;
   max-height: 3em;
+  margin-top: 30px;
 }
 
 .position-fix {
@@ -303,9 +303,12 @@ footer {
 }
 
 .modal {
-  margin-top: 3em;
-  display: block;
-  z-index: 10;
+  display: none;
+  background: rgba(0,0,0,.7);  
+}
+
+.modal-dialog {
+  margin: 3em auto 0;
 }
 
 @media only screen and
