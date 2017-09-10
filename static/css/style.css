@@ -20,16 +20,17 @@
 body {
   font-family: 'cat', 'quark';
   font-size: 24px;
+  margin: 0;
 }
 
-#nav {
+nav {
   background-color: #FFD101;
 }
 
-#nav nav {
+/* #nav nav {
   position: relative;
-  min-height: 55px;
-}
+  min-height: 55px; */
+/* } */
 
 #nav nav li {
   margin: 0 1em;

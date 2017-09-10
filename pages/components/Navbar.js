@@ -4,7 +4,7 @@ import styled from 'styled-components'
 class Navbar extends React.Component {
   render() {
     return (
-      <nav className="text-center navbar navbar-expand-lg navbar-toggleable-md navbar-light" data-spy="affix" data-offset-top="500">
+      <nav className="text-center navbar sticky-top navbar-expand-lg navbar-toggleable-md navbar-light" data-spy="affix" data-offset-top="500">
         <a className="navbar-brand" href="#">
           <img className="logo-sm" src="../../static/img/logo-01.png" alt="logo" />
         </a>
