@@ -20,7 +20,10 @@
 body {
   font-family: 'cat', 'quark';
   font-size: 24px;
-  margin: 0;
+}
+
+.modal {
+  background: rgba(0,0,0,.7);
 }
 
 nav {
