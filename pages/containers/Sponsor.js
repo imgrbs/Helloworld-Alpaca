@@ -8,7 +8,7 @@ class SponsorPage extends React.Component {
           Sponsor by <br />
           SIT KMUTT <br />
           created by <br />
-          Alchemist <br />
+          <img src="../../static/img/logo-white1.png" alt="logo-alchemist" />
         </div>
       </div>
     )

@@ -43,7 +43,7 @@ class Index extends React.Component {
         </Head>
         <div className="container-fluid">
         </div>
-        <div className="container-fluid">
+        <div data-spy="scroll" className="container-fluid">
           <Landing />
           <Nav />
           <Why />

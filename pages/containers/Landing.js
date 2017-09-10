@@ -12,6 +12,7 @@ const Register = styled.button`
   margin: 0 auto;
   cursor: pointer;
   transition: 0.2s;
+  z-index: 2;
 
   &:hover {
     color: #000;
@@ -30,6 +31,10 @@ class LandingPage extends React.Component {
           <img className="breaklimit" src="../../static/img/desc.png" alt="break-limit" />
         </div>
         <Register style={{marginTop: '2em'}}>Coming Soon</Register>
+        <img src="../../static/img/al1.png" alt="" className="alpaca-jump alpaca-jump-1" />
+        <img src="../../static/img/al4.png" alt="" className="alpaca-jump alpaca-jump-2" />
+        <img src="../../static/img/al7.png" alt="" className="alpaca-jump alpaca-jump-3" />
+        <img src="../../static/img/al8.png" alt="" className="alpaca-jump alpaca-jump-4" />
       </div>
     )
   }

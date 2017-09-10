@@ -18,6 +18,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'cat', 'quark';
   font-size: 24px;
   margin: 0;
@@ -69,13 +70,125 @@ img.flip {
 }
 
 .landing-height {
+  position: relative;
   min-height: 90vh;
   background-image: url('../img/bg1.png');
-  background-attachment: fixed;
   background-size: cover;
   background-position: center bottom;
   flex-direction: column;
   padding: 1.3em 0;
+}
+
+.alpaca-jump {
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 1300px;
+  bottom: 10px;
+  animation-name: jumpper !important;
+  animation-iteration-count: infinite;
+  z-index: 0;
+}
+
+.alpaca-jump-1 {
+  animation-duration: 4.2s !important;
+}
+
+.alpaca-jump-2 {
+  animation-duration: 6s !important;
+}
+
+.alpaca-jump-3 {
+  animation-duration: 5.5s !important;
+}
+
+.alpaca-jump-4 {
+  animation-duration: 5.2s !important;
+}
+
+.alpaca-jump-5 {
+  animation-duration: 4.1s !important;
+}
+
+.alpaca-jump-6 {
+  animation-duration: 3s !important;
+}
+
+.alpaca-jump-7 {
+  animation-duration: 7s !important;
+}
+
+.alpaca-jump-8 {
+  animation-duration: 6.3s !important;
+}
+
+.alpaca-jump-9 {
+  animation-duration: 5s !important;
+}
+
+@keyframes jumpper {
+  0%, 20%, 40%, 60%, 80% {transform: translateY(0);} 
+  10% {transform: translateY(-50px);}
+  30% {transform: translateY(-50px);} 
+  50% {transform: translateY(-50px);} 
+  70% {transform: translateY(-50px);} 
+  90% {transform: translateY(-50px);} 
+  
+  10% {
+    left: 1200px;
+  }
+  15% {
+    left: 1100px;
+  }
+  20% {
+    left: 1000px;
+  }
+  25% {
+    left: 900px;
+  }
+  30% {
+    left: 800px;
+  }
+  35% {
+    left: 700px;
+  }
+  40% {
+    left: 600px;
+  }
+  45% {
+    left: 500px;
+  }
+  50% {
+    left: 400px;
+  }
+  55% {
+    left: 300px;
+  }
+  60% {
+    left: 200px;
+  }
+  65% {
+    left: 100px;
+  }
+  70% {
+    left: 0px;
+  }
+  75% {
+    left: -100px;
+  }
+  80% {
+    left: -200px;
+  }
+  85% {
+    left: -300px;
+  }
+  90% {
+    left: -400px;
+  }
+  100% {
+    left: -500px;
+  }
 }
 
 .landing-height .hello-field {
