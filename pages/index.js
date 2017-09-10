@@ -1,8 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
 
+import styled from 'styled-components'
+
 import Nav from './components/Navbar'
 
+import Preload from './containers/Preload'
 import Landing from './containers/Landing'
 import Why from './containers/Why'
 import Team from './containers/Team'
@@ -13,7 +16,27 @@ import Game from './containers/Game'
 import Portfolio from './containers/Portfolio'
 import Contact from './containers/Contact'
 
+const MainContainer = styled.div`
+  display: ${props => props.display ? 'block' : 'none'}
+`
+
 class Index extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      display: false
+    }
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        display: true
+      })
+    }, 2000);
+  }
+
   render() {
     return (
       <div>
@@ -41,9 +64,8 @@ class Index extends React.Component {
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
         </Head>
-        <div className="container-fluid">
-        </div>
-        <div data-spy="scroll" className="container-fluid">
+        <Preload />
+        <MainContainer display={this.state.display} data-spy="scroll" className="container-fluid">
           <Landing />
           <Nav />
           <Why />
@@ -54,8 +76,6 @@ class Index extends React.Component {
           <Game />
           <Portfolio />
           <Contact />
-        </div>
-        <footer className="container-fluid">
           <div className="row">
             <div className="container">
               <div className="row text-center">
@@ -63,7 +83,7 @@ class Index extends React.Component {
               </div>
             </div>
           </div>
-        </footer>
+        </MainContainer>>
       </div>
     )
   }

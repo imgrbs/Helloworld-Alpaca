@@ -6,18 +6,18 @@ const Register = styled.button`
   font-size: 1.5em;
   border-radius: 30px;
   padding: 0em 1em;
-  background: none;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   min-width: 6em;
   margin: 0 auto;
   cursor: pointer;
   transition: 0.2s;
   z-index: 2;
 
-  &:hover {
-    color: #000;
-    background-color: #fff;
-  }
+  // &:hover {
+  //   color: #000;
+  //   background-color: #fff;
+  // }
 `
 
 class LandingPage extends React.Component {
