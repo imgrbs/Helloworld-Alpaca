@@ -94,7 +94,7 @@ img.breaklimit {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em;
+  padding: 2em 0 0;
   min-height: 90vh;
   background-image: url('../img/bg2.png');
   background-size: cover;
@@ -102,7 +102,7 @@ img.breaklimit {
 }
 
 .team-height {
-  padding: 2em;
+  padding: 2em 0;
   min-height: 90vh;
   background-image: url('../img/bg3.png');
   background-size: cover;
@@ -110,7 +110,7 @@ img.breaklimit {
 }
 
 .where-height {
-  padding: 2em;
+  padding: 2em 0;
   min-height: 100vh;
   background-image: url('../img/bg4.png');
   background-size: cover;
@@ -118,7 +118,7 @@ img.breaklimit {
 }
 
 .when-height {
-  padding: 2em;
+  padding: 2em 0;
   flex-direction: column;
   min-height: 120vh;
   background-image: url('../img/bg5.png');
@@ -152,11 +152,17 @@ img.breaklimit {
 }
 
 .contact-height {
-  padding: 2em;
+  padding: 2em 0;
   min-height: 90vh;
   background-image: url('../img/bg6.png');
   background-size: cover;
   background-position: center bottom;
+}
+
+footer {
+  color: #fff;
+  min-height: 150px;
+  background-color: #324663;
 }
 
 .header-text {
