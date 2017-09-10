@@ -25,7 +25,12 @@ body {
 #nav {
   background-color: #FFD101;
 }
-#nav nav {
+
+#nav nav li {
+  margin: 0 1em;
+}
+
+#nav nav li a{
   color: #fff;
 }
 
@@ -76,7 +81,7 @@ img.breaklimit {
   min-height: 90vh;
   background-image: url('../img/bg2.png');
   background-size: cover;
-  background-position: center bottom;
+  background-position: center 95%;
 }
 
 .team-height {
@@ -92,17 +97,21 @@ img.breaklimit {
   min-height: 100vh;
   background-image: url('../img/bg4.png');
   background-size: cover;
-  background-position: center;
-}
-
-.when-height {
-  min-height: 90vh;
-  background-image: url('../img/bg5.png');
-  background-size: cover;
   background-position: center bottom;
 }
 
+.when-height {
+  min-height: 120vh;
+  background-image: url('../img/bg5.png');
+  background-size: cover;
+  background-position: center 99%;
+}
+
 .sponsor-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 90vh;
   background-color: #BF8E8E;
   background-size: cover;
@@ -124,10 +133,11 @@ img.breaklimit {
 }
 
 .contact-height {
+  padding: 2em;
   min-height: 90vh;
-  background-color: #BF8E8E;
+  background-image: url('../img/bg6.png');
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
 }
 
 .header-text {
@@ -147,24 +157,16 @@ img.breaklimit {
 }
 
 .team-logo-top {
+  cursor: pointer;
   height: 150px;
   width: 150px;
   margin: 0;
-}
-
-.team-logo-bottom {
-  height: 150px;
-  width: 150px;
 }
 
 @media only screen and
 (min-width: 1024px){
   .team-logo-top {
     margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  
-  .team-logo-bottom {
     margin-bottom: 1em;
   }
 }
