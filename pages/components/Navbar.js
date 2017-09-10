@@ -2,16 +2,34 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 class Navbar extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      collapseNav: false
+    }
+    this.toggleNav = this.toggleNav.bind(this)
+  }
+
+  toggleNav() {
+    console.log(this.state.collapseNav)
+    this.setState({ collapseNav: !this.state.collapseNav })
+  }
+
   render() {
     return (
       <nav className="row text-center navbar sticky-top navbar-expand-lg navbar-toggleable-md navbar-light" data-spy="affix" data-offset-top="500">
         <a className="navbar-brand" href="#">
           <img className="logo-sm" src="../../static/img/logo-01.png" alt="logo" />
         </a>
-        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <button 
+          onClick={ () => this.toggleNav() }
+          className="navbar-toggler navbar-toggler-right" 
+          type="button"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="menu">
+        <div className={`collapse navbar-collapse ${this.state.collapseNav ? 'show':''}`} id="menu">
           <ul className="nav nav-pills navbar-nav ml-auto mr-auto">
             <li className="nav-item">
               <a className="nav-link" href="#what">What</a>
