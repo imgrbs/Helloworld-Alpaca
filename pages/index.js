@@ -45,11 +45,7 @@ class Index extends React.Component {
         </div>
         <div className="container-fluid">
           <Landing />
-          {/* <div id="nav" className="row">
-            <div className="col-12"> */}
-              <Nav />
-            {/* </div>
-          </div> */}
+          <Nav />
           <Why />
           <Team />
           <Where />

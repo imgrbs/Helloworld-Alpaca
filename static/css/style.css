@@ -27,18 +27,17 @@ nav {
   background-color: #FFD101;
 }
 
-/* #nav nav {
-  position: relative;
-  min-height: 55px; */
-/* } */
-
 #nav nav li {
   margin: 0 1em;
 }
 
-#nav nav li a{
+.navbar-light .navbar-nav .nav-link {
   color: #fff;
-  font-size: 1.2em;
+}
+
+.nav-pills .nav-link {
+  margin: 0 1em;
+  background: transparent;
 }
 
 #nav .navbar-brand {
