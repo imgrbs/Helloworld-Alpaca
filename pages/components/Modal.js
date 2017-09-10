@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Div = styled.div`
+  cursor: pointer;
   display: ${props => props.on === 'true' ? 'block' : 'none'};
 `
 
@@ -17,21 +18,21 @@ class Modal extends React.Component {
   render() {
     return (
       <Div on={this.props.on}>
-        <div class="modal">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
-                <button type="button" class="close" onClick={ () => {this.props.handle()} }>
+        <div className="modal">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Modal title</h5>
+                <button type="button" className="close" onClick={ () => {this.props.handle()} }>
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
+              <div className="modal-body">
                 <p>Modal body text goes here.</p>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Save changes</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-primary">Save changes</button>
+                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
