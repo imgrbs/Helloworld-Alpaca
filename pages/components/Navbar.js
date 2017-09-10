@@ -4,26 +4,31 @@ import styled from 'styled-components'
 class Navbar extends React.Component {
   render() {
     return (
-      <nav className={ true ? 'fixed-top' : '' }>
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-              <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-            </button>
-            <a className="navbar-brand" href="#">HelloWorld</a>
-          </div>
-          <div className="navbar-collapse" id="navbar-collapse">
-            <ul className="nav navbar-nav">
-              <li className=""><a href="#">wwww</a></li>
-              <li className=""><a href="#">wwww</a></li>
-              <li className=""><a href="#">wwww</a></li>
-              <li className=""><a href="#">wwww</a></li>
-              <li className=""><a href="#">wwww</a></li>
-            </ul>
-          </div>
+      <nav className="navbar navbar-toggleable-sm navbar-light bg-faded" data-offset-top="500">
+        <a className="navbar-brand" href="#">
+          <img className="logo-sm" src="../../static/img/logo-01.png" alt="logo" />
+        </a>
+        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="menu">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#what">What</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Team</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Where</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">When</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
     )

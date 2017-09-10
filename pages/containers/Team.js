@@ -12,29 +12,29 @@ class TeamPage extends React.Component {
     return (
       <div className="row team-height">
         <div className="col-12 text-center">
-          <img src="../../static/img/team.png" alt="team" />
+          <img className="what-text" src="../../static/img/team.png" alt="team" />
         </div>
         <div className="col-12 text-center">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
                 <Box>
-                  <img src="../../static/img/font.png" alt="" />
+                  <img className="what-text" src="../../static/img/font.png" alt="" />
                 </Box>
               </div>
               <div className="col-lg-6">
                 <Box>
-                  <img src="../../static/img/de.png" alt="" />
+                  <img className="what-text" src="../../static/img/de.png" alt="" />
                 </Box>
               </div>
               <div className="col-lg-6">
                 <Box>
-                  <img src="../../static/img/game.png" alt="" />
+                  <img className="what-text" src="../../static/img/game.png" alt="" />
                 </Box>
               </div>
               <div className="col-lg-6">
                 <Box>
-                  <img src="../../static/img/infra.png" alt="" />
+                  <img className="what-text" src="../../static/img/infra.png" alt="" />
                 </Box>
               </div>
             </div>

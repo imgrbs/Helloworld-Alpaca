@@ -4,10 +4,8 @@ class WherePage extends React.Component {
   render() {
     return (
       <div className="row where-height">
-        <div className="col-12 text-center">
-          <h1>
-            Where?
-          </h1>
+        <div className="col-12 text-center col-lg-6">
+          <img className="what-text" src="../../static/img/where.png" alt="where" />
         </div>
       </div>
     )

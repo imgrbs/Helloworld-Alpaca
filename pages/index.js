@@ -20,14 +20,18 @@ class Index extends React.Component {
           <title>HelloWorld #Alpaca</title>
           <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
           <link rel="stylesheet" href="/static/css/style.css" />
+          <script src="../static/js/jquery.min.js"></script>
+          <script src="../static/js/bootstrap.min.js"></script>
         </Head>
-        {/* <div className="container-fluid">
-          <div className="row">
-            <Nav />
-          </div>
-        </div> */}
+        <div className="container-fluid">
+        </div>
         <div className="container-fluid">
           <Landing />
+          <div id="nav" className="row">
+            <div className="col-12">
+              <Nav />
+            </div>
+          </div>
           <Why />
           <Team />
           <Where />

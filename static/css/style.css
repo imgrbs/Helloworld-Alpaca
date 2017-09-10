@@ -26,11 +26,29 @@ body {
   background-color: #FFD101;
 }
 
+.logo-sm {
+  max-width: 80px;
+}
+
+img.flip {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.alpaca {
+  max-height: 500px;
+}
+
 .landing-height {
   min-height: 90vh;
   background-image: url('../img/bg1.png');
   background-attachment: fixed;
   background-size: cover;
+  background-position: center bottom;
   flex-direction: column;
   padding: 1.3em 0;
 }
@@ -55,7 +73,7 @@ img.breaklimit {
   min-height: 90vh;
   background-image: url('../img/bg2.png');
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
 }
 
 .team-height {
@@ -66,13 +84,9 @@ img.breaklimit {
   background-position: center;
 }
 
-.team-height img{
-  max-height: 250px;
-}
-
 .where-height {
   padding: 1em;
-  min-height: 90vh;
+  min-height: 100vh;
   background-image: url('../img/bg4.png');
   background-size: cover;
   background-position: center;
@@ -82,7 +96,7 @@ img.breaklimit {
   min-height: 90vh;
   background-image: url('../img/bg5.png');
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
 }
 
 .sponsor-height {
