@@ -11,6 +11,7 @@ import When from './containers/When'
 import Sponsor from './containers/Sponsor'
 import Game from './containers/Game'
 import Portfolio from './containers/Portfolio'
+import Contact from './containers/Contact'
 
 class Index extends React.Component {
   render() {
@@ -39,6 +40,7 @@ class Index extends React.Component {
           <Sponsor />
           <Game />
           <Portfolio />
+          <Contact />
         </div>
         <div className="container-fluid">
           <div className="row">

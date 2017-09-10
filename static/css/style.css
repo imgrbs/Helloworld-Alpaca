@@ -79,7 +79,7 @@ img.breaklimit {
 .team-height {
   padding: 1em;
   min-height: 90vh;
-  background-image: url('../img/bg3.png');
+  background-color: #CAF3FF;
   background-size: cover;
   background-position: center;
 }
@@ -101,21 +101,28 @@ img.breaklimit {
 
 .sponsor-height {
   min-height: 90vh;
-  background-image: url('../img/bg6.png');
+  background-color: #BF8E8E;
   background-size: cover;
   background-position: center;
 }
 
 .game-height {
   min-height: 90vh;
-  background-image: url('../img/bg6.png');
+  background-color: #BF8E8E;
   background-size: cover;
   background-position: center;
 }
 
 .portfolio-height {
   min-height: 90vh;
-  background-image: url('../img/bg6.png');
+  background-color: #BF8E8E;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-height {
+  min-height: 90vh;
+  background-color: #BF8E8E;
   background-size: cover;
   background-position: center;
 }
@@ -134,4 +141,25 @@ img.breaklimit {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.team-logo-top {
+  margin-top: 1em;
+  max-height: 170px;
+}
+
+.team-logo-bottom {
+  margin-bottom: 1em;
+  max-height: 170px;
+}
+
+@media only screen and
+(min-width: 1024px){
+  .team-logo-top {
+    margin-top: 1em;
+  }
+  
+  .team-logo-bottom {
+    margin-bottom: 1em;
+  }
 }

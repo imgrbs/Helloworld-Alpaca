@@ -10,31 +10,31 @@ const Box = styled.div`
 class TeamPage extends React.Component {
   render() {
     return (
-      <div className="row team-height">
+      <div id="team" className="row team-height">
         <div className="col-12 text-center">
           <img className="what-text" src="../../static/img/team.png" alt="team" />
         </div>
         <div className="col-12 text-center">
           <div className="container">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-md-6">
                 <Box>
-                  <img className="what-text" src="../../static/img/font.png" alt="" />
+                  <img className="team-logo-top" src="../../static/img/font.png" alt="" />
                 </Box>
               </div>
-              <div className="col-lg-6">
+              <div className="col-md-6">
                 <Box>
-                  <img className="what-text" src="../../static/img/de.png" alt="" />
+                  <img className="team-logo-top" src="../../static/img/de.png" alt="" />
                 </Box>
               </div>
-              <div className="col-lg-6">
+              <div className="col-md-6">
                 <Box>
-                  <img className="what-text" src="../../static/img/game.png" alt="" />
+                  <img className="team-logo-bottom" src="../../static/img/game.png" alt="" />
                 </Box>
               </div>
-              <div className="col-lg-6">
+              <div className="col-md-6">
                 <Box>
-                  <img className="what-text" src="../../static/img/infra.png" alt="" />
+                  <img className="team-logo-bottom" src="../../static/img/infra.png" alt="" />
                 </Box>
               </div>
             </div>

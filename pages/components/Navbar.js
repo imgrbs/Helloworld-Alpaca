@@ -4,7 +4,7 @@ import styled from 'styled-components'
 class Navbar extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-toggleable-sm navbar-light bg-faded" data-offset-top="500">
+      <nav className="navbar navbar-toggleable-md navbar-light" data-offset-top="500">
         <a className="navbar-brand" href="#">
           <img className="logo-sm" src="../../static/img/logo-01.png" alt="logo" />
         </a>
@@ -13,20 +13,20 @@ class Navbar extends React.Component {
         </button>
         <div className="collapse navbar-collapse" id="menu">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
+            <li className="nav-item">
               <a className="nav-link" href="#what">What</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Team</a>
+              <a className="nav-link" href="#team">Team</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Where</a>
+              <a className="nav-link" href="#where">Where</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">When</a>
+              <a className="nav-link" href="#when">When</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contact</a>
+              <a className="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
