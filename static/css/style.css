@@ -65,6 +65,10 @@ body {
   display: block;
 } */
 
+p {
+  font-family: 'quark';
+}
+
 nav {
   background-color: #FFD101;
 }
@@ -123,6 +127,20 @@ img.flip {
   background-position: center bottom;
   flex-direction: column;
   padding: 1.3em 0;
+}
+
+.register-btn {
+  border: 5px solid #fff;
+  font-size: 1.5em;
+  border-radius: 30px;
+  padding: 0em 1em;
+  background-color: #fff;
+  color: #000;
+  min-width: 6em;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 2;
 }
 
 .alpaca-jump {
@@ -231,29 +249,34 @@ img.breaklimit {
   justify-content: center;
   align-items: center;
   min-height: 55vh;
-  background-color: #BF8E8E;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#324663), to(#324663));
+  background-image: -webkit-linear-gradient(top, #324663, #324663);
+  background-image: -moz-linear-gradient(top, #324663, #324663);
+  background-image: linear-gradient(to bottom, #324663, #324663);
   background-size: cover;
   background-position: center;
 }
 
 .game-height {
   min-height: 90vh;
-  background-color: #BF8E8E;
+  /* background-color: #BF8E8E; */
+  background-image: url('../img/bg6.png');
   background-size: cover;
   background-position: center;
 }
 
 .portfolio-height {
   min-height: 90vh;
-  background-color: #BF8E8E;
+  background-image: url('../img/bg7.png');
   background-size: cover;
   background-position: center;
 }
 
 .contact-height {
+  position: relative;
   padding: 80px 0 0;
   min-height: 90vh;
-  background-image: url('../img/bg6.png');
+  background-color: #BF8E8E;
   background-size: cover;
   background-position: center 99%;
 }

@@ -8,10 +8,9 @@ class WhyPage extends React.Component {
           <div className="row">
             <div className="col-lg-6">
               <img className="what-text" src="../../static/img/what.png" alt="what" />
-              <p> Hello World Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ
-              ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์ มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐาน
-              ของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำรางตัวพิมพ์มาสลับสับตำแหน่ง
-              ตัวอักษรเพื่อทำหนังสือตัวอย่าง Lorem Ipsum อยู่ยงคงกระพันมาไม่ใช่แค่เพียงห้าศตวรรษ</p>
+              <p>
+                HelloWorld #Alpaca คือ กิจกรรมการเรียนการสอนที่พี่ๆ Alchemist ได้เตรียมมาเพื่อน้องๆปี 1 คณะ SIT ทั้งน้องๆ IT และน้องๆ CS ได้มาพัฒนาความสามารถ ในด้านต่างๆที่น้องๆสนใจ น้องสามารถที่จะเลือกทีมจะเข้าศึกษาได้ ไม่ว่าจะเป็น ทีม Hello-FrontEnd, ทีม Hello-Design ,ทีม Hello-Game และ ทีม Hello-Infra พี่ๆทุกคนยินดีที่จะต้อนรับน้องๆเข้ามาร่วมกันเป็นส่วนหนึ่งในงานนี้นะคะ
+              </p>
             </div>
             <div className="col-lg-6">
               <img style={{ height: '100%', width: '100%' }} src="../../static/img/al7.png" alt="" />

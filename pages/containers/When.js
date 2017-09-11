@@ -4,13 +4,15 @@ class WhenPage extends React.Component {
   render() {
     return (
       <div id="when" className="row when-height">
-        <div style={{ height:'250px' }} className="col-12 text-center col-lg-6">
-          <img className="flip alpaca" src="../../static/img/al8.png" alt="alpaca" />
+        <div 
+        //style={{ height:'250px' }} 
+        className="col-12 text-center col-lg-6">
+          {/* <img className="flip alpaca" src="../../static/img/al8.png" alt="alpaca" /> */}
         </div>
-        <div className="col-12 text-center col-lg-6">
+        <div className="col-12 text-center offset-lg-6 col-lg-6">
           <img className="what-text" src="../../static/img/when.png" alt="when" />
           <p>
-            Hello World Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์ มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐาน ของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำรางตัวพิมพ์มาสลับสับตำแหน่ง ตัวอักษรเพื่อทำหนังสือตัวอย่าง Lorem Ipsum อยู่ยงคงกระพันมาไม่ใช่แค่เพียงห้าศตวรรษ
+            เราจะเปิดรับสมัครกันในวันจันทร์ที่ 18 กันยายน 2560 ถึง วันพฤหัสบดีที่ 21 กันยายน 2560 และเริ่มการเรียนการสอนวันที่ 9 ตุลาคม 2560 ถึงวันที่ 26 ตุลาคม 2560 ซึ่งเป็นเวลา 3 สัปดาห์ด้วยกัน
           </p>
         </div>
       </div>
