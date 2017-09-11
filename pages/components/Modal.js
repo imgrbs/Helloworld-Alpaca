@@ -17,20 +17,19 @@ class Modal extends React.Component {
 
   render() {
     return (
-      <Div className="modal" onAbort={() => { this.props.handle() }} on={this.props.on}>
+      <Div className="modal" onClick={() => { this.props.handle() }} on={this.props.on}>
         <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title">Modal title</h5>
+              <h5 className="modal-title">{this.props.title}</h5>
               <button type="button" className="close" onClick={ () => {this.props.handle()} }>
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div className="modal-body">
-              <p>Modal body text goes here.</p>
+              <p>{this.props.desc}</p>
             </div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-primary">Save changes</button>
               <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={() => { this.props.handle() }}>Close</button>
             </div>
           </div>

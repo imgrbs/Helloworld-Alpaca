@@ -45,11 +45,11 @@ class TeamPage extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-md-3">
-                <Box onClick={() => { this.handleClick() }} color="#A56CFF">
+                <Box onClick={() => { console.log('wow'); this.handleClick() }} color="#A56CFF">
                   <img className="team-logo-top" src="../../static/img/font.png" alt="" />
                   <span>Front-End</span>
                 </Box>
-                <Modal handle={() => { this.setState({ oneOn : 'false'}) }} on={this.state.oneOn} />
+                <Modal title={'Hello-FrontEnd'} desc={'wowwowwww'} handle={() => { this.setState({ oneOn : 'false'}) }} on={this.state.oneOn} />
               </div>
               <div className="col-md-3">
                 <Box color="#D4FF36">
