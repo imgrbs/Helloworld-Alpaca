@@ -10,13 +10,40 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  // height: 185px;
   
+  img {
+    z-index: 3;
+  }
+
   span {
     font-size: 35px;
     color: ${props => props.color ? props.color : '#fff' };
   }
 `
+const Cloud = styled.img`
+  height: 150px;
+`
+
+const CloudLeft = Cloud.extend`
+  top: 7em;
+  left: 0;
+`
+
+const AlpacaLeft = Cloud.extend`
+  top: 2.5em;
+  left: 5em;
+`
+
+const CloudRight = Cloud.extend`
+  top: 19em;
+  right: 0;
+`
+
+const AlpacaRight = Cloud.extend`
+  top: 14.5em;
+  right: 3em;
+`
+
 
 class TeamPage extends React.Component {
 
@@ -38,6 +65,10 @@ class TeamPage extends React.Component {
   render() {
     return (
       <div id="team" className="row team-height">
+        <CloudLeft src="../../static/img/cleft.png" alt="cloud" className="cloud" />
+        <AlpacaLeft src="../../static/img/joox1.png" alt="cloud" className="joox joox-left" />
+        <CloudRight src="../../static/img/cright.png" alt="cloud" className="cloud" />
+        <AlpacaRight src="../../static/img/joox2.png" alt="cloud" className="joox joox-right" />
         <div className="col-12 text-center">
           <img className="what-text" src="../../static/img/team.png" alt="team" />
         </div>
