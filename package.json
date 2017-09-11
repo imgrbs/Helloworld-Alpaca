@@ -6,6 +6,7 @@
     "next": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-scroll": "^1.5.4",
     "recompose": "^0.25.0",
     "styled-components": "^2.1.2"
   },
