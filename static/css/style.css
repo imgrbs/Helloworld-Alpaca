@@ -26,6 +26,45 @@ body {
   font-size: 24px;
 }
 
+/* @keyframes navbar-open {
+  0% {
+    display: block;
+    height: -1px;
+  }
+  100% {
+    height: 100px;
+    display: block;
+  }
+}
+
+@keyframes navbar-close {
+  0% {
+    display: block;
+    height: 100px;
+  }
+  100% {
+    height: -1px;
+    display: block;
+  }
+}
+
+.collapse.show {
+  max-height: 270px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+  animation-name: navbar-open;
+  display: block;
+}
+
+.collapse.close {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+  animation-name: navbar-close;
+  display: block;
+} */
+
 nav {
   background-color: #FFD101;
 }
@@ -36,7 +75,7 @@ nav {
 
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
-  background: transparent;
+  background-color: transparent;
 }
 
 .nav-pills .nav-link {
@@ -52,6 +91,11 @@ nav {
   position: absolute;
   top: 7px;
   right: 0;
+}
+
+.close {
+  text-shadow: none !important;
+  opacity: 1 !important;
 }
 
 .logo-sm {
@@ -156,7 +200,7 @@ img.breaklimit {
 }
 
 .team-height {
-  padding: 2em 0;
+  padding: 2em 1em;
   min-height: 90vh;
   background-image: url('../img/bg3.png');
   background-size: cover;
@@ -164,7 +208,7 @@ img.breaklimit {
 }
 
 .where-height {
-  padding: 2em 0;
+  padding: 2em 1em;
   min-height: 100vh;
   background-image: url('../img/bg4.png');
   background-size: cover;
@@ -172,7 +216,7 @@ img.breaklimit {
 }
 
 .when-height {
-  padding: 2em 0;
+  padding: 2em 1em;
   flex-direction: column;
   min-height: 120vh;
   background-image: url('../img/bg5.png');
@@ -256,6 +300,27 @@ footer {
   margin: 3em auto 0;
 }
 
+.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
 @media only screen and
 (min-width: 800px){
   .when-height {
@@ -275,6 +340,19 @@ footer {
   #nav .navbar-brand {
     position: absolute;
     top: 10px;
+  }
+}
+
+@media only screen and
+(min-width: 1300px) {
+  .team-height {
+    padding: 2em;
+  }
+  .where-height {
+    padding: 2em;
+  }
+  .when-height {
+    padding: 2em;
   }
 }
 

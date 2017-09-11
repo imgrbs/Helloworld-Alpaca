@@ -18,7 +18,7 @@ class Modal extends React.Component {
   render() {
     return (
       <Div className="modal" onClick={() => { this.props.handle() }} on={this.props.on}>
-        <div className="modal-dialog" role="document">
+        <div className={`modal-dialog ${this.state.on ? 'animated fadeInUp' : ''} `} role="document">
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title">{this.props.title}</h5>
