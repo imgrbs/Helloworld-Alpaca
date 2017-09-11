@@ -26,21 +26,86 @@ class Index extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      display: false
+      display: false,
+      stuck: false,
+      h: '',
+      topElement: ''
     }
+    this.handleScroll = this.handleScroll.bind(this)
   }
 
   componentDidMount() {
+    this.setState({
+      h: document.getElementById('nav'),
+    })
     setTimeout(() => {
       this.setState({
-        display: true
+        display: true,
+        topElement: document.getElementById('nav').offsetTop
       })
+      // this.setState({ h: document.getElementById("nav") })
+      // this.setState({ stickyPoint: document.getElementById("nav").offsetTop })
+      
+      window.addEventListener('scroll', this.handleScroll);
     }, 2000);
+    setTimeout(()=>{
+      this.setState({
+        topElement: document.getElementById('nav').offsetTop
+      })
+      console.log(t)
+      // console.log('topasdfasd: '+this.state.topElement)
+    },3000)
+
+  }
+
+  // handleScroll(event) {
+  //   let distance = h.offsetTop - window.pageYOffset
+  //   let offset = window.pageYOffset
+  //   let tempStuck = this.state.stuck
+  //   let tempH = this.state.h
+  //   let tempStickPoint = this.state.stickyPoint
+  //   // console.log('tempH: '+this.state.h)    
+  //   console.log('tempH: '+tempH)
+  //   // tempReadout.innerHTML = tempStickPoint + '   ' + distance + '   ' + offset + '   ' + tempStuck;
+  //   if ( (distance <= 0) && !tempStuck) {
+  //     tempH.style.position = 'fixed';
+  //     tempH.style.top = '0px';
+  //     // stuck = true;
+  //     this.setState({stuck: true})
+  //   } else if (tempStuck && (offset <= tempStickPoint)){
+  //     tempH.style.position = 'static';
+  //     this.setState({stuck: false})
+  //     // stuck = false;
+  //   }
+  // }
+
+  handleScroll(e) {
+    // console.log(this.state.h.offsetTop)
+    // console.log('test')
+    let hi = this.state.h
+    let offset = window.pageYOffset
+    let distance = hi.offsetTop - offset
+    let st = this.state.stuck
+    console.log('hi: ' + hi.offsetTop)
+    console.log('top: ' + this.state.topElement)
+    console.log('offset: ' + offset)
+    console.log('if1' + distance <= 0 )
+    console.log('if2' + offset <= this.state.topElement)
+    if ( distance <= 0  && !st) {
+      hi.style.position = 'fixed';
+      hi.style.top = '0px';
+      this.setState({ stuck: true })
+    } else if (st && (offset <= this.state.topElement)) {
+      hi.style.position = '';
+      console.log('else')
+      this.setState({ stuck: false })
+    }
+
   }
 
   render() {
     return (
-      <div>
+      <div >
         <Head>
           <title>HelloWorld #Alpaca</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
