@@ -6,7 +6,7 @@ class PortfolioPage extends React.Component {
     return (
       <div className="row portfolio-height">
         <div className="col-12 text-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-          PortfolioPage
+          Portfolio
         </div>
       </div>
     )

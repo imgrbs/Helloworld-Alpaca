@@ -60,7 +60,9 @@ class Index extends React.Component {
           <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
           <link rel="stylesheet" href="/static/css/style.css" />
         </Head>
+
         <Preload />
+        
         <MainContainer display={this.state.display} data-spy="scroll" className="container-fluid">
           <Landing />
           <Nav />
@@ -74,6 +76,7 @@ class Index extends React.Component {
           <Contact />
           <Footer />
         </MainContainer>
+        
       </div>
     )
   }

@@ -17,8 +17,11 @@
   font-style: normal;
 }
 
-body {
+html, body {
   overflow-x: hidden;
+}
+
+body {
   font-family: 'cat', 'quark';
   font-size: 24px;
 }
@@ -276,6 +279,25 @@ footer {
 }
 
 /* spinner */
+
+@keyframes circle {
+  0% {  
+    border-radius: 100%;
+    border-top-color: #FF4612;
+    border-right-color: #FF4612;
+    border-bottom-color: #FF4612;
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+  }
+  100% {
+    border-radius: 100%;
+    border-top: 15px solid #FF4612;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    transform: rotate(720deg);
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+  }
+}
+
 .preload {
   -webkit-transition:  0.5s;
   -moz-transition:  0.5s;
@@ -289,7 +311,20 @@ footer {
   background-color: #FFD101;
 }
 
+.border-spin {
+  width: 300px;
+  position: absolute;
+  animation-name: circle !important;
+  animation-duration: 2s !important;
+  height: 300px;
+}
+
 .preload img {
+  margin: 1em;
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
   width: 300px;
   height: 300px;
   border-radius: 250px;

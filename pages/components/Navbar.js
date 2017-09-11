@@ -12,7 +12,6 @@ class Navbar extends React.Component {
   }
 
   toggleNav() {
-    console.log(this.state.collapseNav)
     this.setState({ collapseNav: !this.state.collapseNav })
   }
 

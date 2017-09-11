@@ -15,6 +15,7 @@ class Preload extends React.Component {
 
   componentDidMount() {
     setTimeout(() => {
+      console.log('disabled')
       this.setState({
         on : false
       })
@@ -24,7 +25,9 @@ class Preload extends React.Component {
   render() {
     return (
       <PreloadDiv display={this.state.on} className="container-fluid preload">
-        <img src="../../static/img/alpaca.gif" alt="" />
+        <img className="" src="../../static/img/alpaca.gif" alt="preload" />
+        <div className="border-spin">
+        </div>
       </PreloadDiv>
     )
   }
