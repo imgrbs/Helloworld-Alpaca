@@ -71,6 +71,7 @@ p {
 
 nav {
   background-color: #FFD101;
+  min-height: 55px;
 }
 
 #nav nav li {
@@ -216,11 +217,11 @@ img.breaklimit {
 }
 
 .why-height {
+  padding: 50px 1em;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0 0;
   min-height: 90vh;
   background-image: url('../img/bg2.png');
   background-size: cover;
@@ -236,7 +237,7 @@ img.breaklimit {
 }
 
 .where-height {
-  padding: 2em 1em;
+  padding: 50px 1em;
   min-height: 100vh;
   background-image: url('../img/bg4.png');
   background-size: cover;
@@ -284,7 +285,7 @@ img.breaklimit {
 
 .contact-height {
   position: relative;
-  padding: 80px 0 0;
+  padding: 40px 0 0;
   min-height: 90vh;
   background-color: #BF8E8E;
   background-size: cover;
@@ -377,6 +378,9 @@ footer {
   .logo-sm {
     position: absolute;
     top: -3px;
+  }
+  nav {
+    max-height: 55px;
   }
 }
 

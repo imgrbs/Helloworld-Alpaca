@@ -7,7 +7,7 @@ class LandingPage extends React.Component {
         <div className="hello-field col-12 text-center">
           <img className="helloworld" src="../../static/img/logo.png" alt="logo-alpaca" />
         </div>
-        <div className="col-12 text-center">
+        <div style={{ marginTop : '2em' }} className="col-12 text-center">
           <img className="breaklimit" src="../../static/img/desc.png" alt="break-limit" />
         </div>
         <button className="register-btn" style={{marginTop:'2em'}}>Coming Soon</button>
