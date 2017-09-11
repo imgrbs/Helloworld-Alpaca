@@ -79,8 +79,10 @@ nav {
 }
 
 #nav .navbar-toggler {
-  top: 8px !important;
-  right: 10px !important;
+  top: 8px;
+  right: 10px;
+  z-index: 1;
+  position: absolute;
 }
 
 .nav {
@@ -93,6 +95,10 @@ nav {
   background-color: transparent;
 }
 
+.nav-pills {
+  z-index: 0;
+}
+
 .nav-pills .nav-link {
   margin: 0 1em;
 }
@@ -100,12 +106,6 @@ nav {
 #nav .navbar-brand {
   position: absolute;
   top: 0;
-}
-
-#nav .navbar-toggler {
-  position: absolute;
-  top: 7px;
-  right: 0;
 }
 
 .close {
