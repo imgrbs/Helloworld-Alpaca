@@ -18,7 +18,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="row">
-        <nav className="col-12 text-center navbar sticky-top navbar-expand-lg navbar-toggleable-md navbar-light" style={{  height: '55px', transition: 'all .2 linear' }} id="nav">
+        <nav className="col-12 text-center navbar sticky-top navbar-expand-lg navbar-toggleable-md navbar-light" style={{  minHeight: '55px', transition: 'all .2 linear' }} id="nav">
           <a className="navbar-brand" href="#">
             <img className="logo-sm" src="../../static/img/logo-01.png" alt="logo" />
           </a>
@@ -32,7 +32,7 @@ class Navbar extends React.Component {
             <div className={`collapse navbar-collapse ${this.state.collapseNav ? 'show':''}`} id="menu"
               
             >
-              <ul className="nav nav-pills navbar-nav ml-auto mr-auto col-sm-6">
+              <ul className="nav nav-pills navbar-nav ml-auto mr-auto col-sm-6 col-md-12">
                 <li className="nav-item">
                   <a className="nav-link" href="#what">What</a>
                 </li>

@@ -77,6 +77,16 @@ nav {
   margin: 0 1em;
 }
 
+#nav .navbar-toggler {
+  top: 8px !important;
+  right: 10px !important;
+}
+
+.nav {
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
   background-color: transparent;
@@ -363,6 +373,10 @@ footer {
   #nav .navbar-brand {
     position: absolute;
     top: 10px;
+  }
+  .logo-sm {
+    position: absolute;
+    top: -3px;
   }
 }
 

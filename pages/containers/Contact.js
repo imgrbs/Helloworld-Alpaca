@@ -25,20 +25,20 @@ class ContactPage extends React.Component {
       <div id="contact" className="row contact-height">
         <div className="col-12 text-center">
           <img className="what-text" src="../../static/img/contact.png" alt="contact" />
-          <PicContainer>
+          {/* <PicContainer>
             <Img 
               style={{ left: '20%' }} 
             src="../../static/img/al1.gif" alt="alpaca-gif" />
-            {/* <Img 
+            <Img 
               style={{ left: '33%' }} 
             src="../../static/img/al2.gif" alt="alpaca-gif" />
             <Img 
               style={{ right: '33%' }} 
-            src="../../static/img/al3.gif" alt="alpaca-gif" /> */}
+            src="../../static/img/al3.gif" alt="alpaca-gif" />
             <Img 
               style={{ right: '20%' }} 
             src="../../static/img/al4.gif" alt="alpaca-gif" />
-          </PicContainer>
+          </PicContainer> */}
         </div>
       </div>
     )
