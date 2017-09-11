@@ -6,25 +6,15 @@ const PreloadDiv = styled.div`
 `
 
 class Preload extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      on : true
-    }
-  }
-
   componentDidMount() {
     setTimeout(() => {
-      console.log('disabled')
-      this.setState({
-        on : false
-      })
+      document.getElementById('preload').style.display = 'none'
     }, 2100);
   }
 
   render() {
     return (
-      <PreloadDiv display={this.state.on} className="container-fluid preload">
+      <PreloadDiv id="preload" className="container-fluid preload">
         <img className="" src="../../static/img/alpaca.gif" alt="preload" />
         <div className="border-spin">
         </div>
