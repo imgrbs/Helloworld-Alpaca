@@ -9,10 +9,16 @@ class Navbar extends React.Component {
       collapseNav: false
     }
     this.toggleNav = this.toggleNav.bind(this)
+    // this.closeNav = this.closeNav.bind(this)
   }
 
   toggleNav() {
     this.setState({ collapseNav: !this.state.collapseNav })
+  }
+
+  closeNav() {
+    this.setState({ collapseNav: false })
+    console.log('test')
   }
 
   render() {
@@ -26,6 +32,7 @@ class Navbar extends React.Component {
             onClick={ () => this.toggleNav() }
             className="navbar-toggler navbar-toggler-right" 
             type="button"
+            style={{ zIndex: 10 }}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -33,20 +40,32 @@ class Navbar extends React.Component {
               
             >
               <ul className="nav nav-pills navbar-nav ml-auto mr-auto col-sm-6 col-md-12">
-                <li className="nav-item">
-                  <a className="nav-link" href="#what">What</a>
+                <li className="nav-item"
+                
+                >
+                  <a className="nav-link" href="#what"
+                    onClick={() => this.closeNav()}
+                  >What</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#team">Team</a>
+                  <a className="nav-link" href="#team"
+                    onClick={() => this.closeNav()}                    
+                  >Team</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#where">Where</a>
+                  <a className="nav-link" href="#where"
+                    onClick={() => this.closeNav()}
+                  >Where</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#when">When</a>
+                  <a className="nav-link" href="#when"
+                    onClick={() => this.closeNav()}
+                  >When</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#contact">Contact</a>
+                  <a className="nav-link" href="#contact"
+                    onClick={() => this.closeNav()}                    
+                  >Contact</a>
                 </li>
               </ul>
             </div>
