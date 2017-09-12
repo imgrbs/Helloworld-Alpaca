@@ -28,7 +28,7 @@ const PicContainer = styled.div`
 class ContactPage extends React.Component {
   render() {
     return (
-      <div id="contact" className="row contact-height justify-content-center">
+      <div name="contact" id="contact" className="row contact-height justify-content-center">
         <Flur src="../../static/img/bg8-1.png" alt="alpaca-gif" />
         <div className="col-12 text-center">
           <img className="what-text" src="../../static/img/contact.png" alt="contact" />

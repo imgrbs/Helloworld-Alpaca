@@ -3,7 +3,7 @@ import React from 'react'
 class WhenPage extends React.Component {
   render() {
     return (
-      <div id="when" className="row when-height">
+      <div name="when" id="when" className="row when-height">
         <div 
         //style={{ height:'250px' }} 
         className="col-12 text-center col-lg-6">

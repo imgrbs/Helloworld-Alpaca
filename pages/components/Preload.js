@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const PreloadDiv = styled.div`
-  display: ${props => props.display ? 'flex' : 'none'}
+  display: flex;
 `
 
 class Preload extends React.Component {

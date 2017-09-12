@@ -3,7 +3,7 @@ import React from 'react'
 class WhyPage extends React.Component {
   render() {
     return (
-      <div id="what" className="row why-height">
+      <div name="what" id="what" className="row why-height">
         <div className="col-12 text-center">
           <div className="row">
             <div className="col-lg-6">

@@ -64,7 +64,7 @@ class TeamPage extends React.Component {
 
   render() {
     return (
-      <div id="team" className="row team-height">
+      <div name="team" id="team" className="row team-height">
         <CloudLeft src="../../static/img/cleft.png" alt="cloud" className="cloud" />
         <AlpacaLeft src="../../static/img/joox1.png" alt="cloud" className="joox joox-left" />
         <CloudRight src="../../static/img/cright.png" alt="cloud" className="cloud" />

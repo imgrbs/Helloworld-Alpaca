@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import Scroll, { Link, animateScroll } from 'react-scroll'
 
 class Navbar extends React.Component {
 
@@ -19,7 +20,7 @@ class Navbar extends React.Component {
     return (
       <div className="row">
         <nav className="col-12 text-center navbar sticky-top navbar-expand-lg navbar-toggleable-md navbar-light" style={{  minHeight: '55px', transition: 'all .2 linear' }} id="nav">
-          <a className="navbar-brand" href="#">
+          <a onClick={() => animateScroll.scrollToTop()} className="navbar-brand">
             <img className="logo-sm" src="../../static/img/logo-01.png" alt="logo" />
           </a>
           <button 
@@ -29,24 +30,22 @@ class Navbar extends React.Component {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-            <div className={`collapse navbar-collapse ${this.state.collapseNav ? 'show':''}`} id="menu"
-              
-            >
+            <div className={`collapse navbar-collapse ${this.state.collapseNav ? 'show':''}`} id="menu">
               <ul className="nav nav-pills navbar-nav ml-auto mr-auto col-sm-6 col-md-12">
                 <li className="nav-item">
-                  <a className="nav-link" href="#what">What</a>
+                  <Link activeClass="active" to="what" spy={true} smooth={true} offset={-60} duration={400} onSetActive={this.handleSetActive} className="nav-link">What</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#team">Team</a>
+                  <Link activeClass="active" to="team" spy={true} smooth={true} offset={-90} duration={400} onSetActive={this.handleSetActive} className="nav-link">Team</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#where">Where</a>
+                  <Link activeClass="active" to="where" spy={true} smooth={true} offset={-120} duration={400} onSetActive={this.handleSetActive} className="nav-link">Where</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#when">When</a>
+                  <Link activeClass="active" to="when" spy={true} smooth={true} offset={-150} duration={400} onSetActive={this.handleSetActive} className="nav-link">When</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#contact">Contact</a>
+                  <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-210} duration={400} onSetActive={this.handleSetActive} className="nav-link">Contact</Link>
                 </li>
               </ul>
             </div>

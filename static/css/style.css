@@ -72,6 +72,7 @@ p {
 nav {
   background-color: #FFD101;
   min-height: 55px;
+  z-index: 99;
 }
 
 #nav nav li {
@@ -93,6 +94,7 @@ nav {
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .nav-pills {
@@ -230,7 +232,7 @@ img.breaklimit {
     top: 2.5em;
   }
   75% {
-    top: 6.5em;
+    top: 6em;
   }
   100% {
     top: 2.5em;
@@ -424,6 +426,7 @@ footer {
   position: absolute;
   animation-name: circle !important;
   animation-duration: 2s !important;
+  animation-iteration-count: infinite;
   height: 300px;
 }
 
@@ -436,6 +439,14 @@ footer {
   width: 300px;
   height: 300px;
   border-radius: 250px;
+}
+
+@media only screen and
+(min-width: 0px) and
+(max-width: 799px) {
+  img.breaklimit {
+      max-height: 3em;
+  }
 }
 
 @media only screen and
@@ -469,6 +480,9 @@ footer {
 
 @media only screen and
 (min-width: 1300px) {
+  img.helloworld {
+    max-height: 6em;
+  }
   .team-height {
     padding: 2em;
   }

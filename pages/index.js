@@ -52,7 +52,6 @@ class Index extends React.Component {
       this.setState({
         topElement: document.getElementById('nav').offsetTop
       })
-      console.log(t)
       // console.log('topasdfasd: '+this.state.topElement)
     },3000)
 
@@ -117,7 +116,7 @@ class Index extends React.Component {
           {/* <meta property="og:image" content="" /> */}
           <meta property="og:site_name" content="HelloWorld #Alpaca By Alchemist" />
           <meta property="og:description" content="Break Your Limit and Practice Your Skill!" />
-          {/* <meta property="fb:page_id" content="1767691256809451"> */}
+          <meta property="fb:page_id" content="1298270230190822" />
           <link rel="icon" type="image/ico" href="../static/favicon.ico" sizes="16x16" />
           <meta name="msapplication-TileColor" content="#FFD101" />
           <meta name="theme-color" content="#FFD101" />
