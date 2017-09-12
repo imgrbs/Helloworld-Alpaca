@@ -85,18 +85,17 @@ class Index extends React.Component {
     let offset = window.pageYOffset
     let distance = hi.offsetTop - offset
     let st = this.state.stuck
-    console.log('hi: ' + hi.offsetTop)
-    console.log('top: ' + this.state.topElement)
-    console.log('offset: ' + offset)
-    console.log('if1' + distance <= 0 )
-    console.log('if2' + offset <= this.state.topElement)
+    // console.log('hi: ' + hi.offsetTop)
+    // console.log('top: ' + this.state.topElement)
+    // console.log('offset: ' + offset)
+    // console.log('if1' + distance <= 0 )
+    // console.log('if2' + offset <= this.state.topElement)
     if ( distance <= 0  && !st) {
       hi.style.position = 'fixed';
       hi.style.top = '0px';
       this.setState({ stuck: true })
     } else if (st && (offset <= this.state.topElement)) {
       hi.style.position = '';
-      console.log('else')
       this.setState({ stuck: false })
     }
 

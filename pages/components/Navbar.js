@@ -10,10 +10,16 @@ class Navbar extends React.Component {
       collapseNav: false
     }
     this.toggleNav = this.toggleNav.bind(this)
+    // this.closeNav = this.closeNav.bind(this)
   }
 
   toggleNav() {
     this.setState({ collapseNav: !this.state.collapseNav })
+  }
+
+  closeNav() {
+    this.setState({ collapseNav: false })
+    console.log('test')
   }
 
   render() {
@@ -27,25 +33,26 @@ class Navbar extends React.Component {
             onClick={ () => this.toggleNav() }
             className="navbar-toggler navbar-toggler-right" 
             type="button"
+            style={{ zIndex: 10 }}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
             <div className={`collapse navbar-collapse ${this.state.collapseNav ? 'show':''}`} id="menu">
               <ul className="nav nav-pills navbar-nav ml-auto mr-auto col-sm-6 col-md-12">
                 <li className="nav-item">
-                  <Link activeClass="active" to="what" spy={true} smooth={true} offset={-60} duration={400} onSetActive={this.handleSetActive} className="nav-link">What</Link>
+                  <Link onClick={() => this.closeNav()} activeClass="active" to="what" spy={true} smooth={true} offset={-60} duration={400} onSetActive={this.handleSetActive} className="nav-link">What</Link>
                 </li>
                 <li className="nav-item">
-                  <Link activeClass="active" to="team" spy={true} smooth={true} offset={-90} duration={400} onSetActive={this.handleSetActive} className="nav-link">Team</Link>
+                  <Link onClick={() => this.closeNav()} activeClass="active" to="team" spy={true} smooth={true} offset={-90} duration={400} onSetActive={this.handleSetActive} className="nav-link">Team</Link>
                 </li>
                 <li className="nav-item">
-                  <Link activeClass="active" to="where" spy={true} smooth={true} offset={-120} duration={400} onSetActive={this.handleSetActive} className="nav-link">Where</Link>
+                  <Link onClick={() => this.closeNav()} activeClass="active" to="where" spy={true} smooth={true} offset={-120} duration={400} onSetActive={this.handleSetActive} className="nav-link">Where</Link>
                 </li>
                 <li className="nav-item">
-                  <Link activeClass="active" to="when" spy={true} smooth={true} offset={-150} duration={400} onSetActive={this.handleSetActive} className="nav-link">When</Link>
+                  <Link onClick={() => this.closeNav()} activeClass="active" to="when" spy={true} smooth={true} offset={-150} duration={400} onSetActive={this.handleSetActive} className="nav-link">When</Link>
                 </li>
                 <li className="nav-item">
-                  <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-210} duration={400} onSetActive={this.handleSetActive} className="nav-link">Contact</Link>
+                  <Link onClick={() => this.closeNav()} activeClass="active" to="contact" spy={true} smooth={true} offset={-210} duration={400} onSetActive={this.handleSetActive} className="nav-link">Contact</Link>
                 </li>
               </ul>
             </div>
