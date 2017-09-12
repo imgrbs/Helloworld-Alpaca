@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Div = styled.div`
   cursor: pointer;
-  display: ${props => props.on === 'true' ? 'block' : 'none'};
+  display: ${props => props.on ? 'block' : 'none'};
 `
 
 class Modal extends React.Component {
@@ -11,14 +11,14 @@ class Modal extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      on : 'false'
+      on : false
     }
   }
 
   render() {
     return (
       <Div className="modal" onClick={() => { this.props.handle() }} on={this.props.on}>
-        <div className={`modal-dialog ${this.state.on ? 'animated fadeInUp' : ''} `} role="document">
+        <div className={`modal-dialog animated fadeInUp`} role="document">
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title">{this.props.title}</h5>

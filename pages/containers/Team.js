@@ -50,7 +50,7 @@ class TeamPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      oneOn : 'false',
+      oneOn : false,
       twoOn : 'false',
       threeOn : 'false',
       fourOn : 'false'
@@ -59,8 +59,10 @@ class TeamPage extends React.Component {
   }
 
   handleClick() {
-    this.setState({ oneOn: 'true' })
+    this.setState({ oneOn: true })
   }
+
+  
 
   render() {
     return (
@@ -80,7 +82,7 @@ class TeamPage extends React.Component {
                   <img className="team-logo-top" src="../../static/img/font.png" alt="" />
                   <span>Front-End</span>
                 </Box>
-                <Modal title={'Hello-FrontEnd'} desc={'wowwowwww'} handle={() => { this.setState({ oneOn : 'false'}) }} on={this.state.oneOn} />
+                <Modal title={'Hello-FrontEnd'} desc={'wowwowwww'} handle={() => { this.setState({ oneOn : false}) }} on={this.state.oneOn} />
               </div>
               <div className="col-md-3">
                 <Box color="#D4FF36">

@@ -57,27 +57,6 @@ class Index extends React.Component {
 
   }
 
-  // handleScroll(event) {
-  //   let distance = h.offsetTop - window.pageYOffset
-  //   let offset = window.pageYOffset
-  //   let tempStuck = this.state.stuck
-  //   let tempH = this.state.h
-  //   let tempStickPoint = this.state.stickyPoint
-  //   // console.log('tempH: '+this.state.h)    
-  //   console.log('tempH: '+tempH)
-  //   // tempReadout.innerHTML = tempStickPoint + '   ' + distance + '   ' + offset + '   ' + tempStuck;
-  //   if ( (distance <= 0) && !tempStuck) {
-  //     tempH.style.position = 'fixed';
-  //     tempH.style.top = '0px';
-  //     // stuck = true;
-  //     this.setState({stuck: true})
-  //   } else if (tempStuck && (offset <= tempStickPoint)){
-  //     tempH.style.position = 'static';
-  //     this.setState({stuck: false})
-  //     // stuck = false;
-  //   }
-  // }
-
   handleScroll(e) {
     // console.log(this.state.h.offsetTop)
     // console.log('test')
