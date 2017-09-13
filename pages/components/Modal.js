@@ -9,15 +9,20 @@ const Div = styled.div`
 
 const Dialog = styled.div`
   margin: 3em auto 0;
+  padding: 75px 30px 70px;
   z-index: 1022;
+  background: url('/static/img/cright.png');
+  background-size: 100% 100%;
+  @media (min-width: 576px){
+    max-width: 600px;
+    padding: 75px 130px 70px;
+    margin: 30px auto;
+  }
 `
 
 const Content = styled.div`
-  background: url('/static/img/cright.png');
-  padding: 75px 130px 70px;
-  background-size: 100% 100%;
-  width: 600px;
-  margin: auto;
+  // width: 600px;
+  // margin: auto;
 `
 
 const Header = styled.div`
