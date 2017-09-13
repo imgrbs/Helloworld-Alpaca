@@ -38,7 +38,29 @@ const Fa = styled.i`
     text-align: center;
     margin: auto;
 `
+const Header = styled.h1`
+    position: absolute;
+    top: 1em;
+    left: 0;
+    text-align: center;
+    width:100%;
+`
+const GameCanvas = styled.canvas`
+    position: absolute;
+    top: 4.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto 1em;
+    display: block;
+    touch-action: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: inherit;
+    width: 980px;
+    height: 550px;
 
+    background: pink;
+`
 
 class GameContainer extends React.Component {
     render() {
@@ -67,7 +89,10 @@ class GameContainer extends React.Component {
                 <Preload daley="1500"/>
 
                 <Container className="container">
-                    Game Alpaca
+                    <Header>Game Alpaca</Header>
+                    <div id="game">
+                        <GameCanvas />
+                    </div>
 
                 </Container>
                 <MobileContainer>
