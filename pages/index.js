@@ -105,7 +105,7 @@ class Index extends React.Component {
           <meta property="og:title" content="HelloWorld #Alpaca" />
           <meta property="og:type" content="company" />
           <meta property="og:url" content="https://helloworld.itbangmod.in.th/" />
-          <meta property="og:image" content="../static/img/og.png" />
+          <meta property="og:image" content="https://helloworld.itbangmod.in.th/static/img/og.png" />
           <meta property="og:site_name" content="HelloWorld #Alpaca By Alchemist" />
           <meta property="og:description" content="Break Your Limit and Practice Your Skill!" />
           <meta property="fb:page_id" content="1298270230190822" />
