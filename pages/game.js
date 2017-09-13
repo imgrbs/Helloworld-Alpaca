@@ -32,6 +32,13 @@ const MobileContainer = styled.div`
     font-size: 40px;
 `
 
+const Content = styled.div`
+    display: ${props => props.display ? 'block':'none'};
+    @media (max-width: 420px) {
+        display: none;
+    }
+`
+
 const Fa = styled.i`
     font-size: 10em !important;
     display: block !important;
@@ -39,18 +46,22 @@ const Fa = styled.i`
     margin: auto;
 `
 const Header = styled.h1`
-    position: absolute;
-    top: 1em;
-    left: 0;
+    // position: relative;
+    // top: 1em;
+    // left: 0;
+    display: ${props => props.display ? 'block':'none'};
+    
+    margin-top:0.5em;
     text-align: center;
     width:100%;
 `
 const GameCanvas = styled.canvas`
-    position: absolute;
-    top: 4.5em;
-    left: 0;
-    right: 0;
-    margin: 0 auto 1em;
+    // position: relative;
+    // // top: 3em;
+    // left: 0;
+    // right: 0;
+
+    margin: 0.5em auto 1em;
     display: block;
     touch-action: none;
     user-select: none;
@@ -63,6 +74,19 @@ const GameCanvas = styled.canvas`
 `
 
 class GameContainer extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            display: false
+        }
+    }
+
+    componentDidMount() {
+        setTimeout(()=>{
+            this.setState({ display: true })
+        }, 1000)
+    }
+
     render() {
         return (
             <div>
@@ -88,13 +112,14 @@ class GameContainer extends React.Component {
                 </Head>
                 <Preload daley="1500"/>
 
-                <Container className="container">
-                    <Header>Game Alpaca</Header>
-                    <div id="game">
-                        <GameCanvas />
+                <Content display={this.state.display}>
+                    <div className="container text-center">
+                        <Header display={this.state.display}>Game Alpaca</Header>
+                        <div id="game">
+                            <GameCanvas />
+                        </div>
                     </div>
-
-                </Container>
+                </Content>
                 <MobileContainer>
                     <div>
                         <Fa className="fa fa-mobile" aria-hidden="true" />

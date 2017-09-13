@@ -3,6 +3,9 @@ import styled from 'styled-components'
 
 const PreloadDiv = styled.div`
   display: flex;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
 `
 
 class Preload extends React.Component {
