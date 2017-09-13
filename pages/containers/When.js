@@ -8,13 +8,13 @@ const Img = styled.img`
   
   @media only screen and
   (min-width: 0px){
-    max-width: 100px;
+    max-width: 60px;
     margin-bottom: 1em;
   }
   
   @media only screen and
   (min-width: 1366px){
-    max-width: 136px;
+    max-width: 70px;
     margin-bottom: 0.5em;
   }
 `
@@ -38,7 +38,7 @@ const Line = styled.div`
   width: 10px;
   height: 250px;
   background-color: #fff;
-  z-index: -1;
+  z-index: 0;
 `
 
 class WhenPage extends React.Component {
@@ -52,28 +52,28 @@ class WhenPage extends React.Component {
           </div>
           <div style={{position:'relative'}} className="col-12 row text-center">
             <Line />
-            <div className="col-4 text-right">
+            <div className="col-6 col-lg-4 text-right">
               <Img src="../../static/img/al1.png" alt="" />
             </div>
-            <ImageContainer className="col-8 d-flex justify-content-flex-start align-items-center">
+            <ImageContainer className="col-6 col-lg-8 d-flex justify-content-flex-start align-items-center">
               เปิดรับสมัคร วันจันทร์ที่ 18 กันยายน 2560<br />
             </ImageContainer>
-            <div className="col-4 text-right">
+            <div className="col-6 col-lg-4 text-right">
               <Img src="../../static/img/al1.png" alt="" /> <br />
             </div>
-            <ImageContainer className="col-8 d-flex justify-content-flex-start align-items-center">
+            <ImageContainer className="col-6 col-lg-8 d-flex justify-content-flex-start align-items-center">
               ประกาศรายชื่อ 22 กันยายน 2560
             </ImageContainer>
-            <div className="col-4 text-right">
+            <div className="col-6 col-lg-4 text-right">
               <Img src="../../static/img/al1.png" alt="" /> <br />
             </div>
-            <ImageContainer className="col-8 d-flex justify-content-flex-start align-items-center">
+            <ImageContainer className="col-6 col-lg-8 d-flex justify-content-flex-start align-items-center">
               เริ่มการเรียนการสอน 9 ตุลาคม 2560
             </ImageContainer>
-            <div className="col-4 text-right">
+            <div className="col-6 col-lg-4 text-right">
               <Img src="../../static/img/al1.png" alt="" /> <br />
             </div>
-            <ImageContainer className="col-8 d-flex justify-content-flex-start align-items-center">
+            <ImageContainer className="col-6 col-lg-8 d-flex justify-content-flex-start align-items-center">
               Alpaca Day !
             </ImageContainer>
           </div>

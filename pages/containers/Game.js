@@ -18,11 +18,9 @@ class GamePage extends React.Component {
     return (
       <div name="game" id="game" className="row game-height">
         <div className="col-12 text-center">
-          <Link href={{ pathname: '/game' }} >
-            <PlayButton href="https://game.helloworld.itbangmod.in.th/">
-              <img src="../../static/img/play2.png" alt="" />
-            </PlayButton>
-          </Link>
+          <PlayButton href="https://game.helloworld.itbangmod.in.th/">
+            <img src="../../static/img/play2.png" alt="" />
+          </PlayButton>
         </div>
       </div>
     )
