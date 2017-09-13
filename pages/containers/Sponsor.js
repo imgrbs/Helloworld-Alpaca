@@ -8,6 +8,7 @@ class SponsorPage extends React.Component {
           <br />
           Sponsor by<br />
           <img style={{ width: '250px' }} src="../../static/img/logo-sit.png" alt="logo-sit" /> <br /><br />
+          <img style={{ width: '250px' }} src="../../static/img/bbenter.png" alt="bangmodcloud" /> <br /><br />
           Created by<br />
           <img style={{height:'150px'}} src="../../static/img/logo-white1.png" alt="logo-alchemist" />
         </div>

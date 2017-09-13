@@ -1,6 +1,7 @@
 import React from 'react'
 
 class WhyPage extends React.Component {
+
   render() {
     return (
       <div name="what" id="what" className="row why-height">
@@ -9,7 +10,7 @@ class WhyPage extends React.Component {
             <div className="col-lg-6">
               <img className="what-text" src="../../static/img/what.png" alt="what" />
               <p>
-                HelloWorld #Alpaca คือ กิจกรรมการเรียนการสอนที่พี่ๆ Alchemist ได้เตรียมมาเพื่อน้องๆปี 1 คณะ SIT ทั้งน้องๆ IT และน้องๆ CS ได้มาพัฒนาความสามารถ ในด้านต่างๆที่น้องๆสนใจ น้องสามารถที่จะเลือกทีมจะเข้าศึกษาได้ ไม่ว่าจะเป็น ทีม Hello-FrontEnd, ทีม Hello-Design ,ทีม Hello-Game และ ทีม Hello-Infra พี่ๆทุกคนยินดีที่จะต้อนรับน้องๆเข้ามาร่วมกันเป็นส่วนหนึ่งในงานนี้นะคะ
+                HelloWorld #Alpaca เปรียบเหมือนเทือกเขาที่พร้อมต้อนรับเหล่าอัลปากาตัวน้อยที่พึ่งเข้ามายังฝูงคณะ SIT ทั้ง IT และ CS  มาผจญภัยด้วยกัน โดยเราจะมีอัลปาการุ่นใหญ่ อย่างพี่ๆ Alchemist มาต้อนรับน้องๆเพื่อไปฝึกฝนในด้านต่างๆที่น้องๆสนใจ  ไม่ว่าจะเป็น ทีม Hello-FrontEnd, ทีม Hello-Design ,ทีม Hello-Game และ ทีม Hello-Infra พี่ๆ อัลปากาพร้อมที่จะต้อนรับน้องๆในทุกวันอังคารและวันพฤหัสบดี เพื่อฝึกฝนให้น้องๆได้เป็นอัลปากาที่มีความสง่างาม ควบคู่ไปกับความรู้  มาเข้าร่วมเป็นส่วนหนึ่งของฝูงเพื่อ ป่าวประกาศศักยภาพในเทือกเขา SIT ที่พวกเราเหล่าอัลปากาได้ถือครองอยู่“เส้นใยจากพระเจ้า” ไม่ใช่ใครจะมีก็ได้ มีเพียงAlpacaเท่านั้น ที่จะได้รับสมยานามนี้…  
               </p>
             </div>
             <div className="col-lg-6">

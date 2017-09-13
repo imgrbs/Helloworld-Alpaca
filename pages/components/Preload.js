@@ -6,10 +6,13 @@ const PreloadDiv = styled.div`
 `
 
 class Preload extends React.Component {
-  componentDidMount() {
+  async componentDidMount() {
+    setTimeout(() => {
+      document.getElementById('preload').className += ' animated fadeOut'
+    }, 2100);
     setTimeout(() => {
       document.getElementById('preload').style.display = 'none'
-    }, 2100);
+    }, 2630);
   }
 
   render() {

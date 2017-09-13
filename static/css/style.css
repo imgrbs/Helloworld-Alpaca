@@ -128,6 +128,15 @@ img.flip {
   -ms-filter: "FlipH";
 }
 
+img.flip-y {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
+}
+
 .alpaca {
   max-height: 9em;
 }
@@ -287,6 +296,9 @@ img.breaklimit {
 }
 
 .sponsor-height {
+  padding: 0.5em 0 2em 0;
+  font-size: 1.7em;
+  color: #fff;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -302,13 +314,18 @@ img.breaklimit {
 }
 
 .game-height {
-  min-height: 90vh;
+  min-height: 115vh;
   /* background-color: #BF8E8E; */
   background-image: url('../img/bg6.png');
   background-size: cover;
-  background-position: center;
+  background-position: top center;
 }
 
+.game-height span {
+  color: #fff;
+  font-size: 1.3em;
+  margin: 1em;
+}
 .portfolio-height {
   min-height: 90vh;
   background-image: url('../img/bg7.png');
@@ -320,7 +337,8 @@ img.breaklimit {
   position: relative;
   padding: 40px 0 0;
   min-height: 90vh;
-  background-color: #BF8E8E;
+  /* background-color: #BF8E8E; */
+  background-color: #233244;
   background-size: cover;
   background-position: center 99%;
 }
@@ -386,6 +404,20 @@ footer {
 
 .fadeInUp {
   animation-name: fadeInUp;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
 }
 
 /* spinner */
@@ -490,6 +522,6 @@ footer {
     padding: 2em;
   }
   .when-height {
-    padding: 2em;
+    padding: 3em 2em;
   }
 }

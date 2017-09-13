@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import ReactGA from 'react-ga'
 
 import styled from 'styled-components'
 
@@ -22,6 +21,18 @@ const MainContainer = styled.div`
   display: ${props => props.display ? 'block' : 'none'}
 `
 
+const ga = `
+  (function (i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-106338310-1', 'auto');
+  ga('send', 'pageview');
+`
+
 class Index extends React.Component {
 
   constructor(props) {
@@ -36,8 +47,6 @@ class Index extends React.Component {
   }
 
   async componentWillMount() {
-    ReactGA.initialize('UA-106338310-1')
-    ReactGA.set({ page: this.props.url.pathname })
   }
 
   componentDidMount() {
@@ -60,7 +69,6 @@ class Index extends React.Component {
       })
       // console.log('topasdfasd: '+this.state.topElement)
     },3000)
-
   }
 
   handleScroll(e) {
@@ -104,14 +112,14 @@ class Index extends React.Component {
           <link rel="icon" type="image/ico" href="../static/favicon.ico" sizes="16x16" />
           <meta name="msapplication-TileColor" content="#FFD101" />
           <meta name="theme-color" content="#FFD101" />
-
+          <script dangerouslySetInnerHTML={{ __html: ga }} />
           <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
           <link rel="stylesheet" href="/static/css/style.css" />
         </Head>
 
         <Preload />
         
-        <MainContainer display={this.state.display} data-spy="scroll" className="container-fluid">
+        <MainContainer id="main-container" display={this.state.display} data-spy="scroll" className="container-fluid">
           <Landing />
           <Nav />
           <Why />
@@ -119,7 +127,7 @@ class Index extends React.Component {
           <Where />
           <When />
           <Sponsor />
-          {/* <Game /> */}
+          <Game />
           {/* <Portfolio /> */}
           <Contact />
           <Footer />

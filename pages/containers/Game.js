@@ -2,7 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 
 const PlayButton = styled.button`
-  background-color: orange;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  img {
+    width: 300px;
+  }
 `
 
 class GamePage extends React.Component {
@@ -10,9 +16,9 @@ class GamePage extends React.Component {
     return (
       <div className="row game-height">
         <div className="col-12 text-center" style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-          Game
+          <span>Let's Play Canon Jump!</span>
           <PlayButton>
-            Click To Play!
+            <img src="../../static/img/play2.png" alt="" />
           </PlayButton>
         </div>
       </div>
