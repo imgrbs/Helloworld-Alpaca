@@ -122,7 +122,7 @@ class Index extends React.Component {
 
           <meta charset="UTF-8" />
           <meta property="og:title" content="HelloWorld #Alpaca" />
-          <meta property="og:type" content="og.likes" />
+          <meta property="og:type" content="pages" />
           <meta property="og:url" content="https://helloworld.itbangmod.in.th/" />
           <meta property="og:image" content="https://helloworld.itbangmod.in.th/static/img/og.png" />
           <meta property="og:site_name" content="HelloWorld #Alpaca By Alchemist" />
