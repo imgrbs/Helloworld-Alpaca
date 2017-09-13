@@ -33,6 +33,25 @@ const ga = `
   ga('send', 'pageview');
 `
 
+const fb_init = `
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '131273967425703',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+`
+
 class Index extends React.Component {
 
   constructor(props) {
@@ -103,16 +122,18 @@ class Index extends React.Component {
 
           <meta charset="UTF-8" />
           <meta property="og:title" content="HelloWorld #Alpaca" />
-          <meta property="og:type" content="company" />
+          <meta property="og:type" content="og.likes" />
           <meta property="og:url" content="https://helloworld.itbangmod.in.th/" />
           <meta property="og:image" content="https://helloworld.itbangmod.in.th/static/img/og.png" />
           <meta property="og:site_name" content="HelloWorld #Alpaca By Alchemist" />
           <meta property="og:description" content="Break Your Limit and Practice Your Skill!" />
           <meta property="fb:page_id" content="1298270230190822" />
+          <meta property="fb:app_id" content="131273967425703" />
           <link rel="icon" type="image/ico" href="../static/favicon.ico" sizes="16x16" />
           <meta name="msapplication-TileColor" content="#FFD101" />
           <meta name="theme-color" content="#FFD101" />
           <script dangerouslySetInnerHTML={{ __html: ga }} />
+          <script dangerouslySetInnerHTML={{ __html: fb_init }} />
           <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
           <link rel="stylesheet" href="/static/css/style.css" />
         </Head>
