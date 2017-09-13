@@ -119,7 +119,7 @@ class Index extends React.Component {
           <Where />
           <When />
           <Sponsor />
-          {/* <Game /> */}
+          <Game />
           {/* <Portfolio /> */}
           <Contact />
           <Footer />

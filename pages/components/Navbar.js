@@ -52,6 +52,9 @@ class Navbar extends React.Component {
                   <Link onClick={() => this.closeNav()} activeClass="active" to="when" spy={true} smooth={true} offset={-150} duration={400} onSetActive={this.handleSetActive} className="nav-link">When</Link>
                 </li>
                 <li className="nav-item">
+                  <Link onClick={() => this.closeNav()} activeClass="active" to="game" spy={true} smooth={true} offset={-210} duration={400} onSetActive={this.handleSetActive} className="nav-link">Game</Link>
+                </li>
+                <li className="nav-item">
                   <Link onClick={() => this.closeNav()} activeClass="active" to="contact" spy={true} smooth={true} offset={-210} duration={400} onSetActive={this.handleSetActive} className="nav-link">Contact</Link>
                 </li>
               </ul>
