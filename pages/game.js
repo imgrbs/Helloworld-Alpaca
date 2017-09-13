@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import styled, { injectGlobal } from 'styled-components'
+import Preload from './components/Preload'
 
 injectGlobal`
     body{
@@ -63,6 +64,8 @@ class GameContainer extends React.Component {
                     <link rel="stylesheet" href="/static/css/style.css" />
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  crossorigin="anonymous" />
                 </Head>
+                <Preload daley="1500"/>
+
                 <Container className="container">
                     Game Alpaca
 
