@@ -17,6 +17,8 @@ const Box = styled.div`
 
   span {
     font-size: 35px;
+    z-index: 3;
+    cursor: pointer;
     color: ${props => props.color ? props.color : '#fff' };
   }
 `

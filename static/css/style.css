@@ -21,6 +21,14 @@ html, body {
   overflow-x: hidden;
 }
 
+.quark {
+  font-family: 'quark';
+}
+
+.cat {
+  font-family: 'cat';
+}
+
 body {
   font-family: 'cat', 'quark';
   font-size: 24px;
@@ -252,7 +260,7 @@ img.breaklimit {
 
 .where-height {
   padding: 50px 1em;
-  min-height: 100vh;
+  min-height: 130vh;
   background-image: url('../img/bg4.png');
   background-size: cover;
   background-position: center bottom;
@@ -268,7 +276,7 @@ img.breaklimit {
 }
 
 .sponsor-height {
-  padding: 0.5em 0 2em 0;
+  padding: 0.5em 0 1em 0;
   font-size: 1.7em;
   color: #fff;
   display: flex;
@@ -308,8 +316,7 @@ img.breaklimit {
 .contact-height {
   position: relative;
   padding: 40px 0 0;
-  min-height: 90vh;
-  /* background-color: #BF8E8E; */
+  min-height: 115vh;
   background-color: #233244;
   background-size: cover;
   background-position: center 99%;
@@ -358,8 +365,12 @@ footer {
 }
 
 .animated {
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
 }
 
 @keyframes fadeInUp {
@@ -410,6 +421,24 @@ footer {
     transform: rotate(720deg);
     transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
   }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
 }
 
 .preload {
@@ -480,6 +509,9 @@ footer {
   nav {
     max-height: 55px;
   }
+  .contact-height {
+    height: 130vh;
+  }
 }
 
 @media only screen and
@@ -492,6 +524,7 @@ footer {
   }
   .where-height {
     padding: 2em;
+    min-height: 140vh;
   }
   .when-height {
     padding: 3em 2em;
