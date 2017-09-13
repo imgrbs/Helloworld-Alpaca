@@ -12,6 +12,8 @@ const Dialog = styled.div`
   padding: 75px 30px 70px;
   z-index: 1022;
   background: url('/static/img/cright.png');
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
   background-size: 100% 100%;
   @media (min-width: 576px){
     max-width: 600px;
@@ -59,7 +61,7 @@ class Modal extends React.Component {
       <Div className="modal" active={this.props.on}
         onClick={() => { this.props.handle() }}        
       >
-        <Dialog className="b-modal-dialog animated fadeInup" role="document">
+        <Dialog className="b-modal-dialog animated fadeInup"  role="document">
           <Content className="b-modal-content">
             <Header className="b-modal-header">
               <h5 className="modal-title">{this.props.title}</h5>
