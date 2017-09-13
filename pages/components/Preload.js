@@ -12,7 +12,7 @@ class Preload extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       document.getElementById('preload').style.display = 'none'
-    }, this.props.delay);
+    }, 2100);
   }
 
   render() {

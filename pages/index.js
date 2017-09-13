@@ -109,7 +109,7 @@ class Index extends React.Component {
           <link rel="stylesheet" href="/static/css/style.css" />
         </Head>
 
-        <Preload delay="2100"/>
+        <Preload />
         
         <MainContainer display={this.state.display} data-spy="scroll" className="container-fluid">
           <Landing />

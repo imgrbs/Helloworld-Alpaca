@@ -1,5 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
+import ReactGA from 'react-ga'
+
 
 import styled, { injectGlobal } from 'styled-components'
 import Preload from './components/Preload'
@@ -49,7 +51,7 @@ const Header = styled.h1`
     // position: relative;
     // top: 1em;
     // left: 0;
-    display: ${props => props.display ? 'block':'none'};
+    // display: ${props => props.display ? 'block':'none'};
     
     margin-top:0.5em;
     text-align: center;
@@ -81,10 +83,15 @@ class GameContainer extends React.Component {
         }
     }
 
+    async componentWillMount() {
+        ReactGA.initialize('UA-106338310-1')
+        ReactGA.set({ page: this.props.url.pathname })
+    }
+
     componentDidMount() {
         setTimeout(()=>{
             this.setState({ display: true })
-        }, 1000)
+        }, 2000)
     }
 
     render() {
@@ -110,11 +117,11 @@ class GameContainer extends React.Component {
                     <link rel="stylesheet" href="/static/css/style.css" />
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  crossorigin="anonymous" />
                 </Head>
-                <Preload daley="1500"/>
+                <Preload />
 
                 <Content display={this.state.display}>
                     <div className="container text-center">
-                        <Header display={this.state.display}>Game Alpaca</Header>
+                        <Header>Game Alpaca</Header>
                         <div id="game">
                             <GameCanvas />
                         </div>
