@@ -16,10 +16,12 @@ class LandingPage extends React.Component {
         <div className="hello-field col-12 text-center">
           <img id="hello-img" className="helloworld" src="../../static/img/logo.png" alt="logo-alpaca" />
         </div>
-        <div style={{ marginTop : '2em' }} className="col-12 text-center">
+        <div className="col-12 text-center box-break">
           <img id="break-img" className="breaklimit" src="../../static/img/desc.png" alt="break-limit" />
         </div>
-        <button id="register-btn" className="register-btn" style={{marginTop:'2em'}}>Coming Soon</button>
+        <div className="col-12 text-center box-btn">
+          <button id="register-btn" className="register-btn" >Coming Soon</button>
+        </div>
         <img src="../../static/img/al1.png" alt="" className="alpaca-jump alpaca-jump-1" />
         <img src="../../static/img/al4.png" alt="" className="alpaca-jump alpaca-jump-2" />
         <img src="../../static/img/al7.png" alt="" className="alpaca-jump alpaca-jump-3" />
