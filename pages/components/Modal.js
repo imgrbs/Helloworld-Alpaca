@@ -8,7 +8,7 @@ const Div = styled.div`
 `
 
 const Dialog = styled.div`
-  margin: 3em 10px 0;
+  margin: 2em 10px 0;
   padding: 75px 30px 70px;
   z-index: 1022;
   background-image: url('/static/img/cloud2.png');
@@ -39,6 +39,8 @@ const Header = styled.div`
 
 const Body = styled.div`
   padding: 15px;
+  max-height: 9em;
+  overflow-y: scroll;
   
 `
 
@@ -60,7 +62,6 @@ class Modal extends React.Component {
   render() {
     return (
       <Div className="modal" active={this.props.on}
-        onClick={() => { this.props.handle() }}        
       >
         <Dialog className="b-modal-dialog animated fadeInup"  role="document">
           <Content className="b-modal-content">
