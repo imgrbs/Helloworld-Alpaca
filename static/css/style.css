@@ -142,7 +142,7 @@ img.flip-y {
   margin: 0 auto;
   cursor: pointer;
   transition: 0.2s;
-  z-index: 2;
+  z-index: 4 !important;
 }
 
 .alpaca-jump {
@@ -267,9 +267,9 @@ img.breaklimit {
 }
 
 .when-height {
-  padding: 0;
+  padding: 1em 0;
   flex-direction: column;
-  min-height: 120vh;
+  min-height: 130vh;
   background-image: url('../img/bg5.png');
   background-size: cover;
   background-position: center 99%;
@@ -306,6 +306,11 @@ img.breaklimit {
   font-size: 1.3em;
   margin: 1em;
 }
+
+.drop-shadow {
+  box-shadow: 2px 3px 3px #000;
+}
+
 .portfolio-height {
   min-height: 90vh;
   background-image: url('../img/bg7.png');
@@ -527,6 +532,6 @@ footer {
     min-height: 140vh;
   }
   .when-height {
-    padding: 3em 2em;
+    padding: 2em 2em;
   }
 }

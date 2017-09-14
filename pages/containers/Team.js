@@ -53,15 +53,20 @@ class TeamPage extends React.Component {
     super(props)
     this.state = {
       oneOn : false,
-      twoOn : 'false',
-      threeOn : 'false',
-      fourOn : 'false'
+      twoOn : false,
+      threeOn : false,
+      fourOn : false
     }
     this.handleClick = this.handleClick.bind(this)
   }
 
-  handleClick() {
-    this.setState({ oneOn: true })
+  handleClick(n) {
+    switch (n) {
+      case 1:this.setState({ oneOn: true });break;
+      case 2:this.setState({ twoOn: true });break;
+      case 3:this.setState({ threeOn: true });break;
+      default:this.setState({ fourOn: true });break;
+    }
   }
 
   
@@ -80,29 +85,32 @@ class TeamPage extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-md-3">
-                <Box onClick={() => { console.log('wow'); this.handleClick() }} color="#A56CFF">
+                <Box onClick={() => { this.handleClick(1) }} color="#A56CFF">
                   <img className="team-logo-top" src="../../static/img/font.png" alt="" />
                   <span>Front-End</span>
                 </Box>
                 <Modal title={'Hello-FrontEnd'} desc={'wowwowwww'} handle={() => { this.setState({ oneOn : false}) }} on={this.state.oneOn} />
               </div>
               <div className="col-md-3">
-                <Box color="#D4FF36">
+                <Box onClick={() => { this.handleClick(2) }} color="#D4FF36">
                   <img className="team-logo-top" src="../../static/img/de.png" alt="" />
                   <span>Design</span>
                 </Box>
+                <Modal title={'Hello-Design'} desc={'wowwowwww'} handle={() => { this.setState({ twoOn : false}) }} on={this.state.twoOn} />
               </div>
               <div className="col-md-3">
-                <Box color="#FF6666">
+                <Box onClick={() => { this.handleClick(3) }} color="#FF6666">
                   <img className="team-logo-top" src="../../static/img/game.png" alt="" />
                   <span>Game</span>
                 </Box>
+                <Modal title={'Hello-Game'} desc={'wowwowwww'} handle={() => { this.setState({ threeOn : false}) }} on={this.state.threeOn} />
               </div>
               <div className="col-md-3">
-                <Box color="#41E0A7">
+                <Box onClick={() => { this.handleClick(4) }} color="#41E0A7">
                   <img className="team-logo-top" src="../../static/img/infra.png" alt="" />
                   <span>Infrastructure</span>
                 </Box>
+                <Modal title={'Hello-Infra'} desc={'wowwowwww'} handle={() => { this.setState({ fourOn : false}) }} on={this.state.fourOn} />
               </div>
             </div>
           </div>

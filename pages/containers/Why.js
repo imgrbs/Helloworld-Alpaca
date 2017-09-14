@@ -25,7 +25,7 @@ class WhyPage extends React.Component {
               </Paragraph>
             </div>
             <div className="col-lg-6">
-              <img style={{ height: '100%', width: '100%' }} src="../../static/img/al7.png" alt="" />
+              <img style={{ width: '100%' }} src="../../static/img/al7.png" alt="" />
             </div>
           </div>
         </div>
