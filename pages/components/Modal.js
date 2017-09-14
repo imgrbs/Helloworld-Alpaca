@@ -11,6 +11,9 @@ const Div = styled.div`
   @media (min-width: 1024px){
     padding: 1.5em;
   }
+  @media (min-width: 1300px){
+    padding: 2em 4em;
+  }
 `
 
 const Dialog = styled.div`
@@ -18,9 +21,9 @@ const Dialog = styled.div`
   height: 100%;
   width: 100%;
   z-index: 1022;
+  animation-name: fadeInUp;
   padding: 2em;
   // background-image: url('/static/img/cloud2.png');
-  animation-name: fadeInUp;
   animation-duration: 0.5s;
   background-color: #fff;
   @media (min-width: 0px){
@@ -40,8 +43,8 @@ const Content = styled.div`
 `
 
 const Header = styled.div`
-  border-bottom: 1px solid #d6d6d6;
-  padding: 15px;
+  // border-bottom: 1px solid #d6d6d6;
+  // padding: 1em;
 
   h5{
     display: inline-block;
@@ -51,15 +54,15 @@ const Header = styled.div`
 const Body = styled.div`
   text-align: left;
   text-indent: 2em;
-  padding: 15px;
+  padding: 1em;
   // max-height: 9em;
   // overflow-y: scroll;
   
 `
 
 const Footer = styled.div`
-  border-top: 1px solid #d6d6d6;
-  padding: 15px;
+  // border-top: 1px solid #d6d6d6;
+  // padding: 1em;
 `
 
 
@@ -74,17 +77,16 @@ class Modal extends React.Component {
 
   render() {
     return (
-      <Div className="modal" active={this.props.on}
-      >
+      <Div className="modal" active={this.props.on}>
         <Dialog className="b-modal-dialog animated fadeInup"  role="document">
           <Content className="b-modal-content">
             <Header className="b-modal-header">
-              <h1 className="modal-title">{this.props.title}</h1>
+              <h1 className="">{this.props.title}</h1>
             </Header>
-            <Body className="modal-body">
+            <Body className="">
               <p>{this.props.desc}</p>
             </Body>
-            <Footer className="modal-footer">
+            <Footer className="">
               <button
                 type="button"
                 className="btn btn-secondary"
