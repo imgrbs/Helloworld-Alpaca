@@ -5,21 +5,32 @@ const Div = styled.div`
   // cursor: pointer;
   display: ${props => props.active ? 'block' : 'none'};
   z-index: 1021;
+  @media (min-width: 0px){
+    padding: 1em 0.7em;
+  }
+  @media (min-width: 1024px){
+    padding: 1.5em;
+  }
 `
 
 const Dialog = styled.div`
-  margin: 2em 10px 0;
-  padding: 75px 30px 70px;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
   z-index: 1022;
-  background-image: url('/static/img/cloud2.png');
+  padding: 2em;
+  // background-image: url('/static/img/cloud2.png');
   animation-name: fadeInUp;
   animation-duration: 0.5s;
-  background-size: 100% 100%;
-  @media (min-width: 576px){
-    max-width: 600px;
-    padding: 75px 130px 70px;
-    margin: 30px auto;
-    background-image: url('/static/img/cloud.png');
+  background-color: #fff;
+  @media (min-width: 0px){
+  }
+  @media (min-width: 1024px){
+    // background: transparent;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: 70%;
+    // background-image: url('/static/img/cloud.png');
   }
 `
 
@@ -38,9 +49,11 @@ const Header = styled.div`
 `
 
 const Body = styled.div`
+  text-align: left;
+  text-indent: 2em;
   padding: 15px;
-  max-height: 9em;
-  overflow-y: scroll;
+  // max-height: 9em;
+  // overflow-y: scroll;
   
 `
 
@@ -66,10 +79,7 @@ class Modal extends React.Component {
         <Dialog className="b-modal-dialog animated fadeInup"  role="document">
           <Content className="b-modal-content">
             <Header className="b-modal-header">
-              <h5 className="modal-title">{this.props.title}</h5>
-              <button type="button" className="close" onClick={ () => {this.props.handle()} }>
-               <span aria-hidden="true">&times;</span>
-              </button>
+              <h1 className="modal-title">{this.props.title}</h1>
             </Header>
             <Body className="modal-body">
               <p>{this.props.desc}</p>
