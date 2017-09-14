@@ -194,6 +194,12 @@ img.breaklimit {
   position: relative;
 }
 
+.team-height h5 {
+  font-family: 'quark';
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .team-height img.cloud {
   position: absolute;
   z-index: 1;
