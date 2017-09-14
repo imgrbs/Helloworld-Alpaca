@@ -8,10 +8,10 @@ const Div = styled.div`
 `
 
 const Dialog = styled.div`
-  margin: 3em auto 0;
+  margin: 3em 10px 0;
   padding: 75px 30px 70px;
   z-index: 1022;
-  background: url('/static/img/cright.png');
+  background-image: url('/static/img/cloud2.png');
   animation-name: fadeInUp;
   animation-duration: 0.5s;
   background-size: 100% 100%;
@@ -19,6 +19,7 @@ const Dialog = styled.div`
     max-width: 600px;
     padding: 75px 130px 70px;
     margin: 30px auto;
+    background-image: url('/static/img/cloud.png');
   }
 `
 
@@ -28,7 +29,7 @@ const Content = styled.div`
 `
 
 const Header = styled.div`
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid #d6d6d6;
   padding: 15px;
 
   h5{
@@ -42,7 +43,7 @@ const Body = styled.div`
 `
 
 const Footer = styled.div`
-  border-top: 1px solid #e9ecef;
+  border-top: 1px solid #d6d6d6;
   padding: 15px;
 `
 
