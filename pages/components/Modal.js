@@ -57,10 +57,11 @@ const Body = styled.div`
   @media (min-width: 0px) {
     max-height: 65vh;
     font-size: 0.7em;
-    
+    padding-top: 0;
   }
   @media (min-width: 375px) {
     font-size: 0.8em;
+    padding-top: 1em;
   }
   @media (min-width: 445px) {
     overflow-y: hidden;
@@ -103,7 +104,7 @@ class Modal extends React.Component {
               </CustomBtn>
               <h1 className="">{this.props.title}</h1>
             </Header>
-            <Body className="">
+            <Body>
               <p dangerouslySetInnerHTML={{ __html: `${this.props.desc}`}}></p>
             </Body>
           </div>

@@ -119,18 +119,30 @@ img.flip-y {
 
 .landing-height {
   position: relative;
-  display: -webkit-flex;
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
   display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-height: 90vh;
   background-image: url('../img/bg1.png');
   background-size: cover;
   background-position: center bottom;
-  flex-direction: column;
   padding: 1.3em 0;
 }
 
 .box-break , .box-btn {
   margin-top: 2em;
+}
+
+.box-btn {
+  z-index: 100;
 }
 
 .register-btn {
