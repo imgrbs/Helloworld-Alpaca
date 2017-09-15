@@ -54,10 +54,13 @@ const Body = styled.div`
     font-size: 0.7em;
   }
   @media (min-width: 375px) {
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
   @media (min-width: 445px) {
     overflow-y: hidden;
+  }
+  @media (min-width: 1300px) {
+    font-size: 1em;
   }
 `
 
@@ -86,7 +89,7 @@ class Modal extends React.Component {
               <h1 className="">{this.props.title}</h1>
             </Header>
             <Body className="">
-              <p>{this.props.desc}</p>
+              <p dangerouslySetInnerHTML={{ __html: `${this.props.desc}`}}></p>
             </Body>
             <CustomBtn className="btn btn-secondary" onClick={() => { this.props.handle() }}>
               Close
