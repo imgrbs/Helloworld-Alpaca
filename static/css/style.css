@@ -144,16 +144,88 @@ img.flip-y {
   height: 300px;
   width: 300px;
   position: absolute;
-  left: 1300px;
   bottom: 10px;
   animation-name: jumpper !important;
   animation-iteration-count: infinite;
   z-index: 0;
 }
 
-.alpaca-jump-1{animation-duration:4.2s!important}.alpaca-jump-2{animation-duration:6s!important}.alpaca-jump-3{animation-duration:5.5s!important}.alpaca-jump-4{animation-duration:5.2s!important}.alpaca-jump-5{animation-duration:4.1s!important}.alpaca-jump-6{animation-duration:3s!important}.alpaca-jump-7{animation-duration:7s!important}.alpaca-jump-8{animation-duration:6.3s!important}.alpaca-jump-9{animation-duration:5s!important}
+@keyframes jumpper {
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(0)
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-50px)
+  }
+  0% {
+    right: -6em;
+  }
+  10% {
+    right: -3em;
+  }
+  15% {
+    right: 6em;
+  }
+  20% {
+    right: 10em;
+  }
+  25% {
+    right: 15em;
+  }
+  30% {
+    right: 20em;
+  }
+  35% {
+    right: 25em;
+  }
+  40% {
+    right: 30em;
+  }
+  45% {
+    right: 35em;
+  }
+  50% {
+    right: 40em;
+  }
+  55% {
+    right: 45em;
+  }
+  60% {
+    right: 50em;
+  }
+  65% {
+    right: 55em;
+  }
+  70% {
+    right: 60em;
+  }
+  75% {
+    right: 65em;
+  }
+  80% {
+    right: 70em;
+  }
+  85% {
+    right: 75em;
+  }
+  90% {
+    right: 80em;
+  }
+  100% {
+    right: 85em;
+  }
+}
 
-@keyframes jumpper{0%,20%,40%,60%,80%{transform:translateY(0)}10%,30%,50%,70%,90%{transform:translateY(-50px)}10%{left:1200px}15%{left:1100px}20%{left:1000px}25%{left:900px}30%{left:800px}35%{left:700px}40%{left:600px}45%{left:500px}50%{left:400px}55%{left:300px}60%{left:200px}65%{left:100px}70%{left:0}75%{left:-100px}80%{left:-200px}85%{left:-300px}90%{left:-400px}100%{left:-500px}}
+
+.alpaca-jump-1{animation-duration:4.2s!important}.alpaca-jump-2{animation-duration:6s!important}.alpaca-jump-3{animation-duration:5.5s!important}.alpaca-jump-4{animation-duration:5.2s!important}.alpaca-jump-5{animation-duration:4.1s!important}.alpaca-jump-6{animation-duration:3s!important}.alpaca-jump-7{animation-duration:7s!important}.alpaca-jump-8{animation-duration:6.3s!important}.alpaca-jump-9{animation-duration:5s!important}
 
 .hello-field {
   max-height: 300px;
@@ -447,6 +519,7 @@ footer {
 }
 
 .preload {
+  position: fixed;
   -webkit-transition:  0.5s;
   -moz-transition:  0.5s;
   transition:  0.5s;

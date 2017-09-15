@@ -25,17 +25,16 @@ const Dialog = styled.div`
   width: 100%;
   z-index: 1022;
   animation-name: fadeInUp;
-  background-image: url(../../static/img/${props => props.pic ? props.pic : '' });
   background-position: bottom right;
   background-repeat: no-repeat;
   animation-duration: 0.5s;
   background-color: #fff;
   @media (min-width: 0px){
     padding: 2em 0.5em;
-    background-size: 35%;
   }
   @media (min-width: 700px){
     background-size: 20%;
+    background-image: url(../../static/img/${props => props.pic ? props.pic : '' });
   }
   @media (min-width: 1024px){
     padding: 2em;
