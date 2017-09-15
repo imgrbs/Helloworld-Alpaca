@@ -120,7 +120,7 @@ class Index extends React.Component {
           <title>HelloWorld #Alpaca</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-          <meta charset="UTF-8" />
+          <meta charSet="UTF-8" />
           <meta property="og:title" content="HelloWorld #Alpaca" />
           <meta property="og:type" content="pages" />
           <meta property="og:url" content="https://helloworld.itbangmod.in.th/" />
