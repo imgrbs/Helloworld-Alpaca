@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Modal from '../components/Modal'
+import Modal from '../../components/Modal'
 
 const Box = styled.div`
   margin: 1em 0;

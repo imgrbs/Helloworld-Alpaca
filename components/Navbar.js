@@ -19,7 +19,6 @@ class Navbar extends React.Component {
 
   closeNav() {
     this.setState({ collapseNav: false })
-    console.log('test')
   }
 
   render() {

@@ -3,8 +3,8 @@ import Head from 'next/head'
 
 import styled from 'styled-components'
 
-import Nav from './components/Navbar'
-import Preload from './components/Preload'
+import Preload from '../components/Preload'
+import Nav from '../components/Navbar'
 
 import Landing from './containers/Landing'
 import Why from './containers/Why'
@@ -91,17 +91,10 @@ class Index extends React.Component {
   }
 
   handleScroll(e) {
-    // console.log(this.state.h.offsetTop)
-    // console.log('test')
     let hi = this.state.h
     let offset = window.pageYOffset
     let distance = hi.offsetTop - offset
     let st = this.state.stuck
-    // console.log('hi: ' + hi.offsetTop)
-    // console.log('top: ' + this.state.topElement)
-    // console.log('offset: ' + offset)
-    // console.log('if1' + distance <= 0 )
-    // console.log('if2' + offset <= this.state.topElement)
     if ( distance <= 0  && !st) {
       hi.style.position = 'fixed';
       hi.style.top = '0px';
