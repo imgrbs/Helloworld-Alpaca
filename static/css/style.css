@@ -119,6 +119,8 @@ img.flip-y {
 
 .landing-height {
   position: relative;
+  display: -webkit-flex;
+  display: flex;
   min-height: 90vh;
   background-image: url('../img/bg1.png');
   background-size: cover;
@@ -536,8 +538,23 @@ footer {
   .where-height {
     padding: 2em;
     min-height: 140vh;
+    font-size: 1.2em;
   }
   .when-height {
     padding: 2em 2em;
+  }
+}
+
+@media only screen and
+(min-width: 1440px) {
+  .where-height {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and
+(min-width: 1440px) {
+  .where-height {
+    font-size: 1.4em;
   }
 }

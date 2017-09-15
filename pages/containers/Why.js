@@ -4,8 +4,14 @@ import styled from 'styled-components'
 const Paragraph = styled.p`
   text-align: left;
   text-indent: 1em;
-  font-size: 1em; 
+  font-size: 0.7em; 
   letter-spacing: 0.025em;
+  @media (min-width: 1300px) {
+    font-size: 0.95em !important;
+  }
+  @media (min-width: 1440px) {
+    font-size: 1.1em !important;
+  }
 `
 
 class WhyPage extends React.Component {

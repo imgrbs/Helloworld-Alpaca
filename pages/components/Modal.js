@@ -27,12 +27,15 @@ const Dialog = styled.div`
   animation-name: fadeInUp;
   background-image: url(../../static/img/${props => props.pic ? props.pic : '' });
   background-position: bottom right;
-  background-size: 20%;
   background-repeat: no-repeat;
   animation-duration: 0.5s;
   background-color: #fff;
   @media (min-width: 0px){
     padding: 2em 0.5em;
+    background-size: 35%;
+  }
+  @media (min-width: 700px){
+    background-size: 20%;
   }
   @media (min-width: 1024px){
     padding: 2em;
@@ -61,6 +64,12 @@ const Body = styled.div`
   }
   @media (min-width: 1300px) {
     font-size: 1em;
+  }
+  @media (min-width: 1440px) {
+    font-size: 1.15em;
+  }
+  @media (min-width: 1600px) {
+    font-size: 1.3em;
   }
 `
 
