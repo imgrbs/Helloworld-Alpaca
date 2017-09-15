@@ -49,15 +49,19 @@ const Header = styled.div`
 `
 
 const Body = styled.div`
+  display: flex;
+  display: -webkit-flex;
   text-align: left;
   text-indent: 2em;
   padding: 1em;
   @media (min-width: 0px) {
     max-height: 65vh;
     font-size: 0.7em;
+    padding-top: 0;
   }
   @media (min-width: 375px) {
-    font-size: 0.9em;
+    font-size: 0.8em;
+    padding-top: 1em;
   }
   @media (min-width: 445px) {
     overflow-y: hidden;
@@ -75,9 +79,9 @@ const Body = styled.div`
 
 const CustomBtn = styled.button`
   cursor: pointer;
-  margin-top: 0.7em;
+  top: 1em;
+  right: 1em;
   position: absolute;
-  bottom: 1.5em;
 `
 
 class Modal extends React.Component {
@@ -95,14 +99,14 @@ class Modal extends React.Component {
         <Dialog pic={this.props.pic} className="b-modal-dialog animated fadeInup"  role="document">
           <div className="b-modal-content d-flex justify-content-center align-items-center flex-column">
             <Header className="b-modal-header">
+              <CustomBtn type="button" className="close" onClick={() => { this.props.handle() }}>
+                <span aria-hidden="true">&times;</span>
+              </CustomBtn>
               <h1 className="">{this.props.title}</h1>
             </Header>
-            <Body className="">
+            <Body>
               <p dangerouslySetInnerHTML={{ __html: `${this.props.desc}`}}></p>
             </Body>
-            <CustomBtn className="btn btn-secondary" onClick={() => { this.props.handle() }}>
-              Close
-            </CustomBtn>
           </div>
         </Dialog>
       </Div>
