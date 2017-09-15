@@ -4,11 +4,16 @@ import styled from 'styled-components'
 const Landing = styled.div`
   position: relative;
   display: block;
-  min-height: 80vh;
   background-image: url('../../static/img/bg1.png');
   background-size: cover;
   background-position: center bottom;
   padding: 1.3em 0;
+  @media (min-width: 0px) {
+    min-height: 80vh;
+  }
+  @media (min-width: 1300px) {
+    min-height: 90vh;
+  }
 `
 
 const LogoAlpaca = styled.img`
