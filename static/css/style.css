@@ -351,11 +351,6 @@ img.breaklimit {
   padding: 0.5em 0 1em 0;
   font-size: 1.7em;
   color: #fff;
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 55vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#324663), to(#324663));
   background-image: -webkit-linear-gradient(top, #324663, #324663);

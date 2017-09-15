@@ -10,8 +10,9 @@ const Img = styled.img`
 
   @media only screen and
   (min-width: 0px){
-    // max-width: 50px;
-    // margin-bottom: 1em;
+    max-width: 45px;
+    margin-bottom: 0.25em;
+    border: 2px solid #000;
   }
   
   @media only screen and
@@ -33,11 +34,21 @@ const ImageContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: left;
-  min-height: 100px;
-  margin-bottom: 1em;
+  text-align: left;
   
   @media only screen and
   (min-width: 0px) {
+    margin-bottom: 0.5em;
+    span {
+      font-size: 0.7em;
+    }
+    .alpaca-day {
+       font-size: 0.9em;
+    }
+  }
+  @media only screen and
+  (min-width: 321px) {
+    margin-bottom: 1.1em;
     span {
       font-size: 0.8em;
     }
@@ -113,7 +124,6 @@ class WhenPage extends React.Component {
           </div>
           <div className="col-12 row text-center">
             <div style={{ position: 'relative' }} className="col-5 d-flex flex-column align-items-center">
-              <Line />
               <Img src={`../../static/img/${this.state.Register}`} alt="" />
               <Img src={`../../static/img/${this.state.Announce}`} alt="" />
               <Img src={`../../static/img/${this.state.Start}`} alt="" />
@@ -130,7 +140,7 @@ class WhenPage extends React.Component {
                 <b>เริ่มผจญภัย</b> <span>9 ตุลาคม 2560</span> <br />
               </ImageContainer>
               <ImageContainer>
-                <b>Alpaca Day !</b> <span>Comming Soon...</span> <br />
+                <b className="alpaca-day">Alpaca Day !</b> <span>Comming Soon...</span> <br />
               </ImageContainer>
             </div>
           </div>
