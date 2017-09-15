@@ -81,6 +81,11 @@ const CustomBtn = styled.button`
   top: 1em;
   right: 1em;
   position: absolute;
+  @media (min-width: 1024px) {
+    font-size: 2em;
+    right: 0.5em;
+    top: 0.5em;
+  }
 `
 
 class Modal extends React.Component {
@@ -99,7 +104,7 @@ class Modal extends React.Component {
           <div className="b-modal-content d-flex justify-content-center align-items-center flex-column">
             <Header className="b-modal-header">
               <CustomBtn type="button" className="close" onClick={() => { this.props.handle() }}>
-                <span aria-hidden="true">&times;</span>
+                <span aria-hidden="true">✕</span>
               </CustomBtn>
               <h1 className="">{this.props.title}</h1>
             </Header>
