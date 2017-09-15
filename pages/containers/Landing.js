@@ -3,18 +3,24 @@ import styled from 'styled-components'
 
 const Landing = styled.div`
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  min-height: 90vh;
+  display: block;
+  min-height: 80vh;
   background-image: url('../../static/img/bg1.png');
   background-size: cover;
   background-position: center bottom;
   padding: 1.3em 0;
 `
 
+const LogoAlpaca = styled.img`
+  margin-top: 1em;
+`
+
+const BreakImage = styled.img`
+  margin-top: 2em;
+`
+
 const Btn = styled.button`
-  // z-index: 100 !important;
+  margin-top: 1em;
 `
 
 class LandingPage extends React.Component {
@@ -31,12 +37,12 @@ class LandingPage extends React.Component {
     return (
       <Landing className="row">
         <div className="col-12 text-center">
-          <img id="hello-img" className="helloworld" src="../../static/img/logo.png" alt="logo-alpaca" />
+          <LogoAlpaca style={{ marginTop: '1em' }} id="hello-img" className="helloworld" src="../../static/img/logo.png" alt="logo-alpaca" />
         </div>
         <div className="col-12 text-center">
-          <img id="break-img" className="breaklimit" src="../../static/img/desc.png" alt="break-limit" />
+          <BreakImage id="break-img" className="breaklimit" src="../../static/img/desc.png" alt="break-limit" />
         </div>
-        <div className="col-12 text-center">
+        <div style={{zIndex: '10'}} className="col-12 text-center">
           <Btn id="register-btn" className="register-btn" >Coming Soon</Btn>
         </div>
         <img src="../../static/img/al1.png" alt="" className="alpaca-jump alpaca-jump-1" />

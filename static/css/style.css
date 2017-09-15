@@ -117,26 +117,6 @@ img.flip-y {
   max-height: 9em;
 }
 
-.landing-height {
-  position: relative;
-  display: -webkit-box; 
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex; 
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 90vh;
-  background-image: url('../img/bg1.png');
-  background-size: cover;
-  background-position: center bottom;
-  padding: 1.3em 0;
-}
-
 .box-break , .box-btn {
   margin-top: 2em;
 }
@@ -175,7 +155,7 @@ img.flip-y {
 
 @keyframes jumpper{0%,20%,40%,60%,80%{transform:translateY(0)}10%,30%,50%,70%,90%{transform:translateY(-50px)}10%{left:1200px}15%{left:1100px}20%{left:1000px}25%{left:900px}30%{left:800px}35%{left:700px}40%{left:600px}45%{left:500px}50%{left:400px}55%{left:300px}60%{left:200px}65%{left:100px}70%{left:0}75%{left:-100px}80%{left:-200px}85%{left:-300px}90%{left:-400px}100%{left:-500px}}
 
-.landing-height .hello-field {
+.hello-field {
   max-height: 300px;
 }
 
