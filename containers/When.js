@@ -7,6 +7,11 @@ const Img = styled.img`
   background: #fff;
   border-radius: 100%;
   z-index: 1;
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   @media only screen and
   (min-width: 0px){
