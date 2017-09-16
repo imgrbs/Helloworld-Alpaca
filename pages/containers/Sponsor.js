@@ -13,7 +13,7 @@ class SponsorPage extends React.Component {
       <Sponser className="row sponsor-height">
         <div className="col-12 text-center">
           <br />
-          Sponsor by<br />
+          Sponsored by<br />
           <div className="col-12 d-flex mb-5 justify-content-center align-items-center flex-row">
             <img style={{ width: '95px' }} src="../../static/img/kmutt.png" alt="logo-sit" /> <br /><br />
             <img style={{ width: '195px', marginTop: '1em' }} src="../../static/img/sit.png" alt="logo-sit" /> <br /><br />
