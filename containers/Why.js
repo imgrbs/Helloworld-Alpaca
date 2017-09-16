@@ -22,7 +22,7 @@ class WhyPage extends React.Component {
         <div className="col-12 text-center">
           <div className="row">
             <div className="col-lg-6">
-              <img className="what-text" src="../../static/img/what.png" alt="what" />
+              <img className="what-text" src="../static/img/what.png" alt="what" />
               <Paragraph>
                 <b>HelloWorld #Alpaca</b> เปรียบเหมือนเทือกเขาที่พร้อมต้อนรับเหล่าอัลปากาตัวน้อยที่พึ่งเข้ามายังฝูงคณะ SIT ทั้ง IT และ CS  มาผจญภัยด้วยกัน โดยเราจะมีอัลปาการุ่นใหญ่ อย่างพี่ๆ Alchemist มาต้อนรับน้องๆเพื่อไปฝึกฝนในด้านต่างๆที่น้องๆสนใจ  ไม่ว่าจะเป็น ทีม Hello-FrontEnd, ทีม Hello-Design , ทีม Hello-Game และ ทีม Hello-Infra 
               </Paragraph>
@@ -31,7 +31,7 @@ class WhyPage extends React.Component {
               </Paragraph>
             </div>
             <div className="col-lg-6">
-              <img style={{ width: '100%' }} src="../../static/img/al7.png" alt="" />
+              <img style={{ width: '100%' }} src="../static/img/al7.png" alt="" />
             </div>
           </div>
         </div>

@@ -120,14 +120,14 @@ class WhenPage extends React.Component {
         <div className="col-lg-5"></div>
         <div className="col-12 col-lg-7">
           <div className="col-12 text-center">
-            <img style={{ marginBottom : '1em'}} className="what-text" src="../../static/img/when.png" alt="when" />
+            <img style={{ marginBottom : '1em'}} className="what-text" src="../static/img/when.png" alt="when" />
           </div>
           <div className="col-12 row text-center">
             <div style={{ position: 'relative' }} className="col-5 d-flex flex-column align-items-center">
-              <Img src={`../../static/img/${this.state.Register}`} alt="" />
-              <Img src={`../../static/img/${this.state.Announce}`} alt="" />
-              <Img src={`../../static/img/${this.state.Start}`} alt="" />
-              <Img src={`../../static/img/${this.state.Alpaca}`} alt="" />
+              <Img src={`../static/img/${this.state.Register}`} alt="" />
+              <Img src={`../static/img/${this.state.Announce}`} alt="" />
+              <Img src={`../static/img/${this.state.Start}`} alt="" />
+              <Img src={`../static/img/${this.state.Alpaca}`} alt="" />
             </div>
             <div style={{ position: 'relative' }} className="col-7 d-flex flex-column">
               <ImageContainer>
@@ -137,7 +137,7 @@ class WhenPage extends React.Component {
                 <b>ประกาศรายชื่อ</b> <span>22 กันยายน 2560</span> <br />
               </ImageContainer>
               <ImageContainer>
-                <b>เริ่มผจญภัย</b> <span>9 ตุลาคม 2560</span> <br />
+                <b className="alpaca-day">Alpaca 1st Meet</b> <span>9 ตุลาคม 2560</span> <br />
               </ImageContainer>
               <ImageContainer>
                 <b className="alpaca-day">Alpaca Day !</b> <span>Comming Soon...</span> <br />

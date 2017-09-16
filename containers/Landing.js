@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Landing = styled.div`
   position: relative;
   display: block;
-  background-image: url('../../static/img/bg1.png');
+  background-image: url('../static/img/bg1.png');
   background-size: cover;
   background-position: center bottom;
   padding: 1.3em 0;
@@ -45,7 +45,7 @@ class LandingPage extends React.Component {
           <LogoAlpaca style={{ marginTop: '1em' }} id="hello-img" className="helloworld" src="../../static/img/logo.png" alt="logo-alpaca" />
         </div>
         <div className="col-12 text-center">
-          <BreakImage id="break-img" className="breaklimit" src="../../static/img/desc.png" alt="break-limit" />
+          <BreakImage id="break-img" className="breaklimit" src="../static/img/desc.png" alt="break-limit" />
         </div>
         <div style={{zIndex: '10'}} className="col-12 text-center">
           <Btn id="register-btn" className="register-btn" >Coming Soon</Btn>
