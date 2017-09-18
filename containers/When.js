@@ -92,7 +92,11 @@ class WhenPage extends React.Component {
 
   async componentWillMount() {
     let DateNow = new Date().getTime()
-    let Register = new Date(2017, 8, 18).getTime()
+    let Register = new Date(2017, 8, 18)
+    Register.setHours(19)
+    Register.setMinutes(0)
+    Register.setSeconds(0)
+    Register = Register.getTime()
     let Announce = new Date(2017, 8, 22).getTime()
     let Start = new Date(2017, 9, 9).getTime()
     let Alpaca = new Date(2017, 10, 2).getTime()
