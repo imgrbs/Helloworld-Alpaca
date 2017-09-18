@@ -29,6 +29,31 @@ const Btn = styled.button`
 `
 
 class LandingPage extends React.Component {
+   constructor(props) {
+     super(props)
+     this.state = {
+       text: 'Comming Soon',
+       status: false
+     }
+   }
+
+   componentWillMount() {
+    let Now = new Date()
+    let Open = new Date(2017, 8, 18)
+    Open.setHours(19)
+    Open.setMinutes(0)
+    Open.setSeconds(0)
+    console.log(Now)
+    console.log(Open)
+    Now = Now.getTime()
+    Open = Open.getTime()
+     if (Now >= Open) {
+        this.setState({
+          text: 'Register!',
+          status: true
+        })
+     }
+   }
 
   componentDidMount() {
     setTimeout(() => {
@@ -48,7 +73,9 @@ class LandingPage extends React.Component {
           <BreakImage id="break-img" className="breaklimit" src="../static/img/desc.png" alt="break-limit" />
         </div>
         <div style={{zIndex: '10'}} className="col-12 text-center">
-          <Btn id="register-btn" className="register-btn" >Coming Soon</Btn>
+          <a href={this.state.status ? 'https://passport.kmutt.ac.th/event/helloworld-alpaca' : '#'}>
+            <Btn id="register-btn" className="register-btn" >{this.state.text}</Btn>
+          </a>
         </div>
         <img src="../../static/img/al1.png" alt="" className="alpaca-jump alpaca-jump-1" />
         <img src="../../static/img/al4.png" alt="" className="alpaca-jump alpaca-jump-2" />
