@@ -43,17 +43,24 @@ class LandingPage extends React.Component {
     Open.setHours(19)
     Open.setMinutes(0)
     Open.setSeconds(0)
-    console.log(Now)
-    console.log(Open)
+    let Announce = new Date(2017, 8, 22)
+    Announce.setHours(19)
+    Announce.setMinutes(0)
+    Announce.setSeconds(0)
     Now = Now.getTime()
     Open = Open.getTime()
-     if (Now >= Open) {
-        this.setState({
-          text: 'Register!',
-          status: true
-        })
-     }
+  if(Now >= Announce.getTime()) {
+    this.setState({
+      text: 'Announcement!',
+      status: false
+    })
+  } else if (Now >= Open) {
+    this.setState({
+      text: 'Register!',
+      status: true
+    })
    }
+  }
 
   componentDidMount() {
     setTimeout(() => {
@@ -73,7 +80,7 @@ class LandingPage extends React.Component {
           <BreakImage id="break-img" className="breaklimit" src="../static/img/desc.png" alt="break-limit" />
         </div>
         <div style={{zIndex: '10'}} className="col-12 text-center">
-          <a href={this.state.status ? 'https://passport.kmutt.ac.th/event/helloworld-alpaca' : '#'}>
+          <a href={this.state.status ? 'https://passport.kmutt.ac.th/event/helloworld-alpaca' : 'https://announce.helloworld.itbangmod.in.th'}>
             <Btn id="register-btn" className="register-btn" >{this.state.text}</Btn>
           </a>
         </div>
