@@ -38,7 +38,7 @@ class LandingPage extends React.Component {
    }
 
    componentWillMount() {
-    let Now = new Date()
+    let Now = new Date(2017, 9, 4)
     let Open = new Date(2017, 8, 18)
     Open.setHours(19)
     Open.setMinutes(0)
@@ -49,17 +49,21 @@ class LandingPage extends React.Component {
     Announce.setSeconds(0)
     Now = Now.getTime()
     Open = Open.getTime()
-  if(Now >= Announce.getTime()) {
-    this.setState({
-      text: 'Announcement!',
-      status: false
-    })
-  } else if (Now >= Open) {
-    this.setState({
-      text: 'Register!',
-      status: true
-    })
-   }
+    let Start = new Date("Oct 9, 2017 13:30:00").getTime();
+    let End = new Date("Oct 27, 2017 20:30:00").getTime();
+    
+
+    // if(Now >= Announce.getTime()) {
+    //   this.setState({
+    //     text: 'Announcement!',
+    //     status: false
+    //   })
+    // } else if (Now >= Open) {
+    //   this.setState({
+    //     text: 'Register!',
+    //     status: true
+    //   })
+    // }
   }
 
   componentDidMount() {
@@ -67,7 +71,69 @@ class LandingPage extends React.Component {
       document.getElementById('hello-img').className += ' animated fadeInUp'
       document.getElementById('break-img').className += ' animated fadeInUp'
       document.getElementById('register-btn').className += ' animated fadeInUp'
-    }, 2900);
+      let Now = new Date()
+      Now = Now.getTime()
+      let Start = new Date("Oct 9, 2017 13:30:00").getTime();
+      let End = new Date("Oct 27, 2017 20:30:00").getTime();
+      if(Now > End){
+        this.setState({
+          text: 'End!',
+          status: false
+        })
+      }else if(Now <= Start){
+        Now = new Date().getTime()
+        // Find the distance between now an the count down date
+        var distance = Start - Now;
+        
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Output the result in an element with id="demo"
+        let text = days + "d " + hours + "h " + minutes + "m " + seconds + "s "
+        // this.setState({ text })
+        document.getElementById('register-btn').innerHTML = text
+        this.showTime(Start)
+      }else{
+        this.setState({
+          text: 'Started!',
+          status: false
+        })
+      }
+      
+      
+    }, 2000);
+  }
+  
+  showTime = (Start) => {
+    this.setState({
+      status: false
+    })
+    let text = ''
+    var x = setInterval(function() {
+        
+        let Now = new Date().getTime()
+        // Find the distance between now an the count down date
+        var distance = Start - Now;
+        
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Output the result in an element with id="register-btn"
+        text = days + "d " + hours + "h " + minutes + "m " + seconds + "s "
+        
+        document.getElementById('register-btn').innerHTML = text
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x)
+            // text: 'Start!'
+            document.getElementById("register-btn").innerHTML = "Start!"
+        }
+    }, 1000);
+    
   }
 
   render() {

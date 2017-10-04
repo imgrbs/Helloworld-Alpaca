@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-import styled from 'styled-components'
+import styled, { injectGlobal } from 'styled-components'
 
 import Preload from '../components/Preload'
 import Nav from '../components/Navbar'
@@ -50,6 +50,16 @@ const fb_init = `
     js.src = "//connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
+`
+const Percent = '40%'
+
+injectGlobal`
+  // html {
+  //   -webkit-filter: grayscale( ${Percent} ) !important; /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+  //   -moz-filter: grayscale( ${Percent} ) !important;
+  //  -o-filter: grayscale(${Percent}) !important;
+  //  filter: grayscale(${Percent}) !important; /* IE6-9 */
+  // }
 `
 
 class Index extends React.Component {
