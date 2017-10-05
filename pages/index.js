@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import styled, { injectGlobal } from 'styled-components'
+// import RibbonIMG from '../static/img/black_ribbon_bottom_right.png'
 
 import Preload from '../components/Preload'
 import Nav from '../components/Navbar'
@@ -60,6 +61,15 @@ injectGlobal`
   //  -o-filter: grayscale(${Percent}) !important;
   //  filter: grayscale(${Percent}) !important; /* IE6-9 */
   // }
+`
+
+const RibbonFix = styled.img.attrs({
+  src: '../static/img/rb.png'
+})`
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
 `
 
 class Index extends React.Component {
@@ -155,6 +165,7 @@ class Index extends React.Component {
           {/* <Portfolio /> */}
           <Contact />
           <Footer />
+          <RibbonFix />
         </MainContainer>
 
       </div>
