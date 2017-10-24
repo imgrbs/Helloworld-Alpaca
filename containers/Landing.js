@@ -50,7 +50,7 @@ class LandingPage extends React.Component {
     Now = Now.getTime()
     Open = Open.getTime()
     let Start = new Date("Oct 9, 2017 13:30:00").getTime();
-    let End = new Date("Oct 27, 2017 20:30:00").getTime();
+    let End = new Date("Nov 2, 2017 20:30:00").getTime();
     
 
     // if(Now >= Announce.getTime()) {
